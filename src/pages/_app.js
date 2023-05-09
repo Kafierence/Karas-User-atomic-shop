@@ -8,23 +8,26 @@ import getStripe from "@utils/stripe";
 import { UserProvider } from "@context/UserContext";
 import DefaultSeo from "@component/common/DefaultSeo";
 import { SidebarProvider } from "@context/SidebarContext";
+import Chakra from "@component/ChakraBox/Chakra";
 const stripePromise = getStripe();
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}>
-        <UserProvider>
-          <SidebarProvider>
-            <Elements stripe={stripePromise}>
-              <CartProvider>
-                <DefaultSeo />
-                <Component {...pageProps} />
-              </CartProvider>
-            </Elements>
-          </SidebarProvider>
-        </UserProvider>
-      </GoogleOAuthProvider>
+      <Chakra cookies={pageProps.cookies}>
+        <GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}>
+          <UserProvider>
+            <SidebarProvider>
+              <Elements stripe={stripePromise}>
+                <CartProvider>
+                  <DefaultSeo />
+                  <Component {...pageProps} />
+                </CartProvider>
+              </Elements>
+            </SidebarProvider>
+          </UserProvider>
+        </GoogleOAuthProvider>
+      </Chakra>
     </>
   );
 }

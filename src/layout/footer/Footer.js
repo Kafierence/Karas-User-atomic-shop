@@ -7,6 +7,7 @@ import { FacebookIcon, LinkedinIcon, PinterestIcon, TwitterIcon, WhatsappIcon } 
 
 //internal import
 import { UserContext } from "@context/UserContext";
+import LinkSocial from "@component/social/LinkSocial";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -40,14 +41,14 @@ const Footer = () => {
               <li className="flex items-baseline">
                 <Link href="#">
                   <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-careers")}
+                    {t("common:FREE_RETURN")}
                   </a>
                 </Link>
               </li>
               <li className="flex items-baseline">
                 <Link href="#">
                   <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-news")}
+                    {t("common:HOW_TO_ORDER")}
                   </a>
                 </Link>
               </li>
@@ -143,78 +144,14 @@ const Footer = () => {
         <hr className="hr-line"></hr>
 
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-10 bg-gray-50 shadow-sm border border-gray-50 rounded-lg">
-          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-8 items-center justify-between">
+          <div className="grid grid-cols-2 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-8 items-center justify-between">
             <div className="col-span-1">
               <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
                 {t("common:footer-follow-us")}
               </span>
-              <ul className="text-sm flex">
-                <li className="flex items-center mr-3 transition ease-in-out duration-500">
-                  <Link href="https://www.facebook.com">
-                    <a
-                      aria-label="Social Link"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="block text-center mx-auto text-gray-500 hover:text-white"
-                    >
-                      <FacebookIcon size={34} round />
-                    </a>
-                  </Link>
-                </li>
-                <li className="flex items-center  mr-3 transition ease-in-out duration-500">
-                  <Link href="https://twitter.com">
-                    <a
-                      aria-label="Social Link"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="block text-center mx-auto text-gray-500 hover:text-white"
-                    >
-                      <TwitterIcon size={34} round />
-                    </a>
-                  </Link>
-                </li>
-                <li className="flex items-center mr-3 transition ease-in-out duration-500">
-                  <Link href="https://www.pinterest.com">
-                    <a
-                      aria-label="Social Link"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="block text-center mx-auto text-gray-500 hover:text-white"
-                    >
-                      <PinterestIcon size={34} round />
-                    </a>
-                  </Link>
-                </li>
-                <li className="flex items-center  mr-3 transition ease-in-out duration-500">
-                  <Link href="https://www.linkedin.com">
-                    <a
-                      aria-label="Social Link"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="block text-center mx-auto text-gray-500 hover:text-white"
-                    >
-                      <LinkedinIcon size={34} round />
-                    </a>
-                  </Link>
-                </li>
-                <li className="flex items-center  mr-3 transition ease-in-out duration-500">
-                  <Link href="https://www.whatsapp.com">
-                    <a
-                      aria-label="Social Link"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="block text-center mx-auto text-gray-500 hover:text-white"
-                    >
-                      <WhatsappIcon size={34} round />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+              <LinkSocial />
             </div>
-            <div className="col-span-1 text-center hidden lg:block md:block">
-              <p className="text-base leading-7 font-medium block">{t("common:footer-call-us")}</p>
-              <h5 className="text-2xl font-bold text-emerald-500 leading-7">+012345-67900</h5>
-            </div>
+
             <div className="col-span-1 hidden lg:block md:block">
               <ul className="lg:text-right">
                 <li className="px-1 mb-2 md:mb-0 transition hover:opacity-80 inline-flex">
@@ -225,6 +162,7 @@ const Footer = () => {
                     src="/payment-method/payment-logo.png"
                     alt="payment method"
                   />
+
                 </li>
               </ul>
             </div>
@@ -232,17 +170,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-screen-2xl px-3 sm:px-10 flex justify-center py-4">
-        <p className="text-sm text-gray-500 leading-6">
-          Copyright 2022 @{" "}
-          <Link href="https://themeforest.net/user/htmllover">
-            <a target="_blank" rel="noopener noreferrer" className="text-emerald-500">
-              HtmlLover
-            </a>
-          </Link>
-          , All rights reserved.
-        </p>
-      </div>
+
     </div>
   );
 };

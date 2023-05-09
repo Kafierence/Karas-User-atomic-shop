@@ -8,17 +8,19 @@ import FooterTop from "@layout/footer/FooterTop";
 import MobileFooter from "@layout/footer/MobileFooter";
 import FeatureCard from "@component/feature-card/FeatureCard";
 import NavBarTop from "./navbar/NavBarTop";
+import TopProgressBar from "@component/progress/TopProgressBar";
 
 const Layout = ({ title, description, children }) => {
   return (
     <>
       <ToastContainer />
+      <TopProgressBar />
       <div className="font-sans">
         <Head>
           <title>
             {title
-              ? `KachaBazar | ${title}`
-              : "KachaBazar - React Grocery & Organic Food Store e-commerce Template"}
+              ? `Karas Ecommerece | ${title}`
+              : "Karas Ecommerece - Modern Store e-commerce Template"}
           </title>
           {description && <meta name="description" content={description} />}
           <link ref="icon" href="/favicon.png" />

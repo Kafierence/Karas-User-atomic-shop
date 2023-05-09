@@ -8,6 +8,7 @@ import LoginModal from "@component/modal/LoginModal";
 import { UserContext } from "@context/UserContext";
 import Cookies from "js-cookie";
 import dynamic from "next/dynamic";
+import { Text } from "@chakra-ui/react";
 
 const NavBarTop = () => {
   const { t } = useTranslation();
@@ -52,6 +53,7 @@ const NavBarTop = () => {
               >
                 +0987011701
               </a>
+              <Text color='red'>dsad</Text>
             </span>
 
             <div className="lg:text-right flex items-center">
