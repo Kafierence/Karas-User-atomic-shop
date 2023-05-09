@@ -121,7 +121,7 @@
   "footer-tell": "Tell: 02.356.1666",
   "footer-email": "Email: ccruidk@test.com",
 
-  "footer-follow-us": "Follow Us",
+  "footer-follow-me": "Follow Me",
   "footer-call-us": "Call Us Today!",
 
   "/=================* About Us* =================/": "",
@@ -402,8 +402,28 @@
   "terms-condition-disclaimer-docs5": "The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty. As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.",
 
   "/=================* New Update * =================/": "",
+
+  "ALLCATEGORIES":"All Categories",
+
   "FREE_RETURN":"Free Returns",
-  "HOW_TO_ORDER":"How to Order"
+
+
+  "HOW_TO_ORDER":"How to Order",
+
+
+
+  "PASSWORD":"Password",
+  "PRODUCT":"Product",
+  "PRODUCTS":"Products",
+  "PENDING":"Pending",
+  "PACKING":"Packing",
+  "PROCESS_TO_CHECKOUT":"Process to Checkout",
+
+  "RESET":"Reset",
+  "RETURNED":"Returned",
+  "REFUNDED":"Refunded",
+  "REJECTED":"Rejected",
+  "REFUND_REQUEST":"Refund Requests"
 
 
   

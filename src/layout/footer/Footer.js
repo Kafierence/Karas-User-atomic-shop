@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import useTranslation from "next-translate/useTranslation";
-import { FacebookIcon, LinkedinIcon, PinterestIcon, TwitterIcon, WhatsappIcon } from "react-share";
 
 //internal import
 import { UserContext } from "@context/UserContext";
@@ -20,7 +19,7 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-10">
         <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 lg:py-16 justify-between">
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
-            <h3 className="text-md lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">
+            <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
               {t("common:footer-menu-title")}
             </h3>
             <ul className="text-sm flex flex-col space-y-3">
@@ -55,7 +54,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
-            <h3 className="text-md lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">
+            <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
               {t("common:footer-top-category")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
@@ -91,7 +90,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
-            <h3 className="text-md lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">
+            <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
               {t("common:footer-my-account-title")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
@@ -147,7 +146,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-8 items-center justify-between">
             <div className="col-span-1">
               <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
-                {t("common:footer-follow-us")}
+                {t("common:footer-follow-me")}
               </span>
               <LinkSocial />
             </div>
