@@ -21,6 +21,8 @@ p:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
+
+
 .coupon .info::after,
 .coupon .info::before {
   content: "";

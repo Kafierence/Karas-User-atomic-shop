@@ -2,36 +2,18 @@ import { Fragment, useState, useEffect } from "react";
 import Link from "next/link";
 import { Transition, Popover } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import SettingServices from "@services/SettingServices";
+
 import useTranslation from "next-translate/useTranslation";
-import { useRouter } from "next/router";
+
 //internal import
 import { pages } from "@utils/data";
 import Category from "@component/category/Category";
-import { notifyError } from "@utils/toast";
+import Settinglanguage from "@component/language/Settinglanguage";
+
 
 const NavbarPromo = () => {
   const { t } = useTranslation();
 
-  const router = useRouter();
-  const { locale } = router;
-  const [data, setData] = useState([]);
-  const [currentLang, setCurrentLang] = useState({});
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const res = await SettingServices.getAllLanguages();
-        setData(res);
-
-        const result = res?.find((lang) => lang?.iso_code === locale);
-        setCurrentLang(result);
-      } catch (err) {
-        notifyError(err);
-        // console.log("error on getting lang", err);
-      }
-    })();
-  }, []);
 
   return (
     <>
@@ -140,34 +122,7 @@ const NavbarPromo = () => {
             </Popover>
           </div>
           <div className="flex">
-            {/* flag */}
-            <div className="dropdown">
-              <div
-                className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
-              ></div>
-              <button className="dropbtn">
-                {currentLang?.name}
-                &nbsp;<i className="fas fa-angle-down"></i>
-              </button>
-              <div className="dropdown-content">
-                {data.map((language, i) => {
-                  return (
-                    <Link
-                      key={i + 1}
-                      href="/"
-                      locale={`${language.language_code}`}
-                    >
-                      <a onClick={() => setCurrentLang(language)}>
-                        <div
-                          className={`flot-l flag ${language?.flag?.toLowerCase()}`}
-                        ></div>
-                        {language?.name}
-                      </a>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
+            <Settinglanguage />
 
             <Link href="/privacy-policy">
               <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">

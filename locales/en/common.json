@@ -404,6 +404,12 @@
   "/=================* New Update * =================/": "",
 
   "ALLCATEGORIES":"All Categories",
+  "ABOUT_US":"About Us",
+  "ADDRESS_ADMIN":"Karas Galaxy , Planet Earth",
+
+  "CONTACT_US":"Contact Us",
+
+  "DASHBOARD":"Dashboard",
 
   "FREE_RETURN":"Free Returns",
 
@@ -418,12 +424,33 @@
   "PENDING":"Pending",
   "PACKING":"Packing",
   "PROCESS_TO_CHECKOUT":"Process to Checkout",
+  "PRIVACY_POLICY":"Privacy Policy",
 
   "RESET":"Reset",
   "RETURNED":"Returned",
   "REFUNDED":"Refunded",
   "REJECTED":"Rejected",
-  "REFUND_REQUEST":"Refund Requests"
+  "REFUND_REQUEST":"Refund Requests",
+  "RECENT_ORDER":"Recent Order",
+
+  "UPDATE_PROFILE":"Update Profile",
+
+  "EMAIL":"Email",
+  "EMAIL_ADMIN":"vannam34760@gmail.com",
+
+  "SIZE_GUIDE":"Size Guide",
+  "SMART_DEVICES":"Smart Devices",
+  "SHOP":"Shop",
+
+  "MY_ORDERS":"My orders",
+
+  "LATOP":"Laptop",
+
+  "TABLET":"Tablet",
+  "TERM_AND_CONDITION":"Term & Condition",
+  "TELL_ADMIN":"0987011701"
+
+  
 
 
   

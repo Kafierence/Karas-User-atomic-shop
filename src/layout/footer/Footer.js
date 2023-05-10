@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import useTranslation from "next-translate/useTranslation";
-
+import LinkPrimary from "@component/variants/LinkPrimary";
 //internal import
 import { UserContext } from "@context/UserContext";
 import LinkSocial from "@component/social/LinkSocial";
@@ -13,7 +13,67 @@ const Footer = () => {
   const {
     state: { userInfo },
   } = useContext(UserContext);
+  const profileInfo = [
+    {
+      label: t('common:ABOUT_US'),
+      link: "/about-us"
+    },
+    {
+      label: t('common:CONTACT_US'),
+      link: "/contact-us"
+    },
+    {
+      label: t('common:SIZE_GUIDE'),
+      link: "/side-guide"
+    },
+    {
+      label: t('common:PRIVACY_POLICY'),
+      link: "/privacy"
+    },
+    {
+      label: t('common:FAQ'),
+      link: "/faq"
+    }
+  ]
+  const topCagories = [
+    {
+      label: t('common:LAPTOP'),
+      link: "/search?Category=laptop",
+    },
+    {
+      label: t("common:TABLET"),
+      link: "/search?Category=tablet",
+    },
+    {
+      label: t("common:SMART_DEVICES"),
+      link: "/search?Category=smart-devices",
+    },
+    {
+      label: t("common:SMART_DEVICES"),
+      link: "/search?Category=smart-devices",
+    }
+  ]
 
+  const accountService = [
+
+    {
+      label: t("common:DASHBOARD"),
+      link: "/user/dashboard",
+    },
+    {
+      label: t("common:MY_ORDERS"),
+      link: "/search?Category=smart-devices",
+    },
+    {
+      label: t("common:RECENT_ORDER"),
+      link: "/search?Category=smart-devices",
+    },
+    {
+      label: t("common:UPDATE_PROFILE"),
+      link: "/search?Category=smart-devices",
+    }
+
+  ]
   return (
     <div className="pb-16 lg:pb-0 xl:pb-0 bg-white">
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-10">
@@ -23,34 +83,11 @@ const Footer = () => {
               {t("common:footer-menu-title")}
             </h3>
             <ul className="text-sm flex flex-col space-y-3">
-              <li className="flex items-baseline">
-                <Link href="/about-us">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-about-us")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href="/contact-us">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-contact-us")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href="#">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:FREE_RETURN")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href="#">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:HOW_TO_ORDER")}
-                  </a>
-                </Link>
-              </li>
+              {profileInfo.map((item => (
+                <li className="flex items-baseline">
+                  <LinkPrimary title={item.label} link={item.link} />
+                </li>
+              )))}
             </ul>
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
@@ -94,48 +131,34 @@ const Footer = () => {
               {t("common:footer-my-account-title")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
-              <li className="flex items-baseline">
-                <Link href={`${userInfo?.email ? "/user/dashboard" : "#"}`}>
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-my-account-dashboard")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href={`${userInfo?.email ? "/user/my-orders" : "#"}`}>
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-my-account-myOrders")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href={`${userInfo?.email ? "/user/dashboard" : "#"}`}>
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-my-account-recentOrders")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href={`${userInfo?.email ? "/user/update-profile" : "#"}`}>
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-my-account-updatedProfile")}
-                  </a>
-                </Link>
-              </li>
+              {
+                accountService.map(item => (
+                  <li className="flex items-baseline">
+
+                    <LinkPrimary link={`${userInfo?.email ? item.link : "#"}`} title={item.label}>
+                      <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
+                        {t("common:footer-my-account-dashboard")}
+                      </a>
+                    </LinkPrimary>
+                  </li>
+                ))
+              }
+
+
             </ul>
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <Link href="/">
               <a className="mr-3 lg:mr-12 xl:mr-12" rel="noreferrer">
-                <Image width={110} height={40} src="/logo/logo-color.svg" alt="logo" />
+                Logo Soon
               </a>
             </Link>
             <p className="leading-7 font-sans text-sm text-gray-600 mt-3">
-              <span>{t("common:footer-address")}</span>
+              <span>{t("common:ADDRESS_ADMIN")}</span>
               <br />
-              <span>{t("common:footer-tell")}</span>
+              <span>{t("common:TELL_ADMIN")}</span>
               <br />
-              <span>{t("common:footer-email")}</span>
+              <span>{t("common:EMAIL_ADMIN")}</span>
             </p>
           </div>
         </div>

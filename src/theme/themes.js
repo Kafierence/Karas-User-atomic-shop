@@ -1,9 +1,5 @@
 import {
-  ComponentMultiStyleConfig,
-  ComponentStyleConfig,
   extendTheme,
-
-  ThemeConfig,
 } from '@chakra-ui/react';
 
 const config = {
@@ -101,12 +97,17 @@ export const colors = {
 };
 
 export const Link = {
+  _hover: {
+    textDecoration: 'none',
+  },
   variants: {
     unstyle: {
       _hover: {
         textDecoration: 'none',
+
       },
     },
+
   },
 };
 
@@ -161,6 +162,7 @@ const themes = extendTheme({
   components: {
     Progress,
     CardBox,
+    Link
 
   },
 });

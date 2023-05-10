@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FiPhoneCall, FiUser } from "react-icons/fi";
@@ -8,7 +8,7 @@ import LoginModal from "@component/modal/LoginModal";
 import { UserContext } from "@context/UserContext";
 import Cookies from "js-cookie";
 import dynamic from "next/dynamic";
-import { Text } from "@chakra-ui/react";
+import Settinglanguage from "@component/language/Settinglanguage";
 
 const NavBarTop = () => {
   const { t } = useTranslation();
@@ -53,35 +53,31 @@ const NavBarTop = () => {
               >
                 +0987011701
               </a>
-              <Text color='red'>dsad</Text>
+
             </span>
 
             <div className="lg:text-right flex items-center">
+
               <Link href="/about-us">
                 <a className="font-medium hover:text-emerald-600">
-                  {" "}
+
                   {t("common:About Us")}
                 </a>
               </Link>
               <span className="mx-2">|</span>
               <Link href="/contact-us">
                 <a className="font-medium hover:text-emerald-600">
-                  {" "}
+
                   {t("common:Contact Us")}
                 </a>
               </Link>
-              <span className="mx-2">|</span>
-              <button
-                onClick={handleModal}
-                className="font-medium hover:text-emerald-600"
-              >
-                {t("common:My account")}
-              </button>
+
+
               <span className="mx-2">|</span>
 
               {userInfo ? (
                 <>
-                  {" "}
+
                   <button
                     onClick={handleLogOut}
                     className="flex items-center font-medium hover:text-emerald-600"
@@ -94,7 +90,7 @@ const NavBarTop = () => {
                 </>
               ) : (
                 <>
-                  {" "}
+
                   <button
                     onClick={() => setModalOpen(!modalOpen)}
                     className="flex items-center font-medium hover:text-emerald-600"
