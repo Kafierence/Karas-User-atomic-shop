@@ -408,12 +408,14 @@
   "ADDRESS_ADMIN":"Karas Galaxy , Planet Earth",
 
   "CONTACT_US":"Contact Us",
+  "CONTACT_CONTENT":"We are available 24/7, Need help? Call Us ",
   "CALL_US":"Call Us",
+  "CURVE":"Curve",
 
   "DASHBOARD":"Dashboard",
 
   "FREE_RETURN":"Free Returns",
-
+  "FLASH_SALE":"Flash Sale",
 
   "HOW_TO_ORDER":"How to Order",
 
@@ -438,6 +440,8 @@
 
   "EMAIL":"Email",
   "EMAIL_ADMIN":"vannam34760@gmail.com",
+  "END_IN":"End in",
+
 
   "SIZE_GUIDE":"Size Guide",
   "SMART_DEVICES":"Smart Devices",
@@ -446,12 +450,14 @@
 
   "MY_ORDERS":"My orders",
 
-  "LATOP":"Laptop",
+  "LAPTOP":"Laptop",
   "LOCATION":"Location",
 
   "TABLET":"Tablet",
   "TERM_AND_CONDITION":"Term & Condition",
   "TELL_ADMIN":"0987011701"
+
+
 
   
 

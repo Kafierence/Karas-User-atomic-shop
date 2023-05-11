@@ -37,7 +37,7 @@ const Footer = () => {
   ]
   const topCagories = [
     {
-      label: t('common:LAPTOP'),
+      label: t("common:LAPTOP"),
       link: "/search?Category=laptop",
     },
     {
@@ -95,35 +95,14 @@ const Footer = () => {
               {t("common:footer-top-category")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
-              <li className="flex items-baseline">
-                <Link href="/search?Category=fish--meat">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-top-category-fish-meat")}
-                  </a>
-                </Link>
-              </li>
+              {topCagories.map(item => (
+                <li className="flex items-baseline" key={item.label}>
+                  <LinkPrimary title={item.label} link={item.LinkPrimary || "#"} />
+                </li>
+              ))}
 
-              <li className="flex items-baseline">
-                <Link href="/search?Category=drinks">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-top-category-soft-drinks")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href="search?Category=baby-care">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-top-category-baby-care")}
-                  </a>
-                </Link>
-              </li>
-              <li className="flex items-baseline">
-                <Link href="search?Category=beauty--health">
-                  <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                    {t("common:footer-top-category-beauty-health")}
-                  </a>
-                </Link>
-              </li>
+
+
             </ul>
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
