@@ -15,6 +15,8 @@ import { UserContext } from "@context/UserContext";
 import LoginModal from "@component/modal/LoginModal";
 import CartDrawer from "@component/drawer/CartDrawer";
 import { SidebarContext } from "@context/SidebarContext";
+import { Box } from "@chakra-ui/react";
+import ProfileDropdown from "@component/dropdown/ProfileDropdown";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -103,23 +105,10 @@ const Navbar = () => {
               {/* Profile dropdown */}
 
               <button className="pl-5 text-white text-2xl font-bold" aria-label="Login">
-                {imageUrl || userInfo?.image ? (
-                  <Link href="/user/dashboard">
-                    <a className="relative top-1 w-6 h-6">
-                      <Image
-                        width={29}
-                        height={29}
-                        src={imageUrl || userInfo?.image}
-                        alt="user"
-                        className="bg-white rounded-full"
-                      />
-                    </a>
-                  </Link>
-                ) : userInfo?.name ? (
-                  <Link href="/user/dashboard">
-                    <a className="leading-none font-bold font-serif block">{userInfo?.name[0]}</a>
-                  </Link>
+                {userInfo ? (
+                  <ProfileDropdown />
                 ) : (
+
                   <span onClick={() => setModalOpen(!modalOpen)}>
                     <FiUser className="w-6 h-6 drop-shadow-xl" />
                   </span>

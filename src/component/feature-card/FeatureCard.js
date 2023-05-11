@@ -1,15 +1,52 @@
 import React from 'react';
 import useTranslation from "next-translate/useTranslation";
-import { featurePromo } from '@utils/data';
+import { Box } from '@chakra-ui/react';
+import { FiCreditCard, FiGift, FiPhoneCall, FiTruck } from 'react-icons/fi';
 
 const FeatureCard = () => {
-  const {t}=useTranslation()
+  const { t } = useTranslation();
+  const featurePromo = [
+    {
+      id: 1,
+      title: 'featurePromo1-title',
+      info: 'featurePromo1-info',
+      icon: FiTruck,
+    },
+    {
+      id: 2,
+      title: 'featurePromo2-title',
+      info: 'featurePromo2-info',
+      icon: FiPhoneCall,
+    },
+    {
+      id: 3,
+      title: 'featurePromo3-title',
+      info: 'featurePromo3-info',
+      icon: FiCreditCard,
+    },
+    {
+      id: 4,
+      title: 'featurePromo4-title',
+      info: 'featurePromo4-info',
+      icon: FiGift,
+    },
+  ];
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 mx-auto">
       {featurePromo.map((promo) => (
-        <div
+        <Box
           key={promo.id}
-          className=" border-r border-gray-200 py-1 flex items-center justify-center bg-white"
+          display='flex'
+          bg='white'
+          justifyContent='center'
+          alignItems='center'
+          className="  py-1 "
+          _notLast={{
+            borderRight: '1px solid',
+            borderColor: 'gray.200'
+
+          }}
+
         >
           <div className="mr-3">
             <promo.icon
@@ -22,7 +59,7 @@ const FeatureCard = () => {
               {t(`common:${promo.title}`)} {t(`common:${promo.info}`)}
             </span>
           </div>
-        </div>
+        </Box>
       ))}
     </div>
   );

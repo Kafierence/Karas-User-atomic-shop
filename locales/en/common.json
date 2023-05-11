@@ -408,6 +408,7 @@
   "ADDRESS_ADMIN":"Karas Galaxy , Planet Earth",
 
   "CONTACT_US":"Contact Us",
+  "CALL_US":"Call Us",
 
   "DASHBOARD":"Dashboard",
 
@@ -441,10 +442,12 @@
   "SIZE_GUIDE":"Size Guide",
   "SMART_DEVICES":"Smart Devices",
   "SHOP":"Shop",
+  "SIGN_OUT":"Sign out",
 
   "MY_ORDERS":"My orders",
 
   "LATOP":"Laptop",
+  "LOCATION":"Location",
 
   "TABLET":"Tablet",
   "TERM_AND_CONDITION":"Term & Condition",

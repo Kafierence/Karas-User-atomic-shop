@@ -62,7 +62,7 @@ const Footer = () => {
     },
     {
       label: t("common:MY_ORDERS"),
-      link: "/search?Category=smart-devices",
+      link: "/user/my-orders",
     },
     {
       label: t("common:RECENT_ORDER"),
@@ -70,7 +70,7 @@ const Footer = () => {
     },
     {
       label: t("common:UPDATE_PROFILE"),
-      link: "/search?Category=smart-devices",
+      link: "/user/update-profile",
     }
 
   ]
@@ -84,7 +84,7 @@ const Footer = () => {
             </h3>
             <ul className="text-sm flex flex-col space-y-3">
               {profileInfo.map((item => (
-                <li className="flex items-baseline">
+                <li className="flex items-baseline" key={item.label}>
                   <LinkPrimary title={item.label} link={item.link} />
                 </li>
               )))}
@@ -133,7 +133,7 @@ const Footer = () => {
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
               {
                 accountService.map(item => (
-                  <li className="flex items-baseline">
+                  <li className="flex items-baseline" key={item.label}>
 
                     <LinkPrimary link={`${userInfo?.email ? item.link : "#"}`} title={item.label}>
                       <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
