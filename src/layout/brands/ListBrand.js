@@ -55,13 +55,13 @@ const ListBrand = () => {
             label: "Logo Cl5"
         }
     ]
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+    const prevRef = useRef();
+    const nextRef = useRef();
     //Setting Brand Logo 
     return (
         <>
             <Flex justifyContent="space-between">
-                <Text>{t('BRANDS')}</Text>
+                <Text textTransform="capitalize">{t('common:BRANDS')}</Text>
                 <HStack>
                     <Button ref={prevRef}>
                         <Icon
@@ -79,20 +79,19 @@ const ListBrand = () => {
             <Divider my={6} />
             <Box>
                 <Swiper
-                    className="mySwiper image-carousel"
                     slidesPerView={1}
                     spaceBetween={10}
                     onInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
+                        swiper.navigation.init()
                         swiper.navigation.update();
                     }}
-                    navigation={{
-                        prevEl: prevRef.current,
-                        nextEl: nextRef.current,
-                    }}
+                    /*  navigation={{
+                         prevEl: prevRef.current,
+                         nextEl: nextRef.current,
+                     }} */
                     modules={[Navigation]}
-
                     breakpoints={{
                         450: {
                             slidesPerView: 1,
