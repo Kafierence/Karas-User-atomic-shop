@@ -171,35 +171,33 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
     ) {
       const newItem = {
         ...p,
-        id: `${
-          p.variants.length <= 1
-            ? p._id
-            : p._id +
-              variantTitle
-                ?.map(
-                  // (att) => selectVariant[att.title.replace(/[^a-zA-Z0-9]/g, '')]
-                  (att) => selectVariant[att._id]
-                )
-                .join("-")
-        }`,
+        id: `${p.variants.length <= 1
+          ? p._id
+          : p._id +
+          variantTitle
+            ?.map(
+              // (att) => selectVariant[att.title.replace(/[^a-zA-Z0-9]/g, '')]
+              (att) => selectVariant[att._id]
+            )
+            .join("-")
+          }`,
 
-        title: `${
-          p.variants.length <= 1
-            ? showingTranslateValue(product?.title, lang)
-            : showingTranslateValue(product?.title, lang) +
-              "-" +
-              variantTitle
-                ?.map(
-                  // (att) => selectVariant[att.title.replace(/[^a-zA-Z0-9]/g, '')]
-                  (att) =>
-                    att.variants?.find((v) => v._id === selectVariant[att._id])
-                )
-                .map((el) =>
-                  Object.keys(el?.name).includes(lang)
-                    ? el?.name[lang]
-                    : el?.name.en
-                )
-        }`,
+        title: `${p.variants.length <= 1
+          ? showingTranslateValue(product?.title, lang)
+          : showingTranslateValue(product?.title, lang) +
+          "-" +
+          variantTitle
+            ?.map(
+              // (att) => selectVariant[att.title.replace(/[^a-zA-Z0-9]/g, '')]
+              (att) =>
+                att.variants?.find((v) => v._id === selectVariant[att._id])
+            )
+            .map((el) =>
+              Object.keys(el?.name).includes(lang)
+                ? el?.name[lang]
+                : el?.name.en
+            )
+          }`,
         variant: selectVariant,
         price: price,
         originalPrice: originalPrice,
@@ -266,7 +264,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
               </div>
               <div className="w-full rounded-lg p-3 lg:p-12 bg-white">
                 <div className="flex flex-col xl:flex-row">
-                  <div className="flex-shrink-0 xl:pr-10 lg:block w-full mx-auto md:w-6/12 lg:w-5/12 xl:w-4/12">
+                  <div className="flex-shrink-0 xl:pr-10 lg:block w-full mx-auto md:w-6/12 lg:w-6/12">
                     <Discount
                       slug={true}
                       product={product}
@@ -304,7 +302,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
 
                   <div className="w-full">
                     <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row">
-                      <div className=" w-3/5 xl:pr-6 md:pr-6  md:w-2/3 mob-w-full">
+                      <div className="  xl:pr-6 md:pr-6  mob-w-full">
                         <div className="mb-6">
                           <h1 className="leading-7 text-lg md:text-xl lg:text-2xl mb-1 font-semibold font-serif text-gray-800">
                             {showingTranslateValue(product?.title, lang)}
@@ -355,35 +353,35 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                           <div className="text-sm leading-6 text-gray-500 md:leading-7">
                             {isReadMore
                               ? showingTranslateValue(
-                                  product?.description,
-                                  lang
-                                )?.slice(0, 230)
+                                product?.description,
+                                lang
+                              )?.slice(0, 230)
                               : showingTranslateValue(
-                                  product?.description,
-                                  lang
-                                )}
+                                product?.description,
+                                lang
+                              )}
                             <br />
                             {Object?.keys(product?.description)?.includes(lang)
                               ? product?.description[lang]?.length > 230 && (
-                                  <span
-                                    onClick={() => setIsReadMore(!isReadMore)}
-                                    className="read-or-hide"
-                                  >
-                                    {isReadMore
-                                      ? t("common:moreInfo")
-                                      : t("common:showLess")}
-                                  </span>
-                                )
+                                <span
+                                  onClick={() => setIsReadMore(!isReadMore)}
+                                  className="read-or-hide"
+                                >
+                                  {isReadMore
+                                    ? t("common:moreInfo")
+                                    : t("common:showLess")}
+                                </span>
+                              )
                               : product?.description?.en?.length > 230 && (
-                                  <span
-                                    onClick={() => setIsReadMore(!isReadMore)}
-                                    className="read-or-hide"
-                                  >
-                                    {isReadMore
-                                      ? t("common:moreInfo")
-                                      : t("common:showLess")}
-                                  </span>
-                                )}
+                                <span
+                                  onClick={() => setIsReadMore(!isReadMore)}
+                                  className="read-or-hide"
+                                >
+                                  {isReadMore
+                                    ? t("common:moreInfo")
+                                    : t("common:showLess")}
+                                </span>
+                              )}
                           </div>
 
                           <div className="flex items-center mt-4">
@@ -491,42 +489,41 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                               </li>
                             </ul>
                           </div>
+                          <div className="mt-6 md:mt-0 lg:mt-0 bg-gray-50 border border-gray-100 p-4 lg:p-8 rounded-lg">
+                            <Card />
+                          </div>
                         </div>
                       </div>
 
                       {/* shipping description card */}
 
-                      <div className="w-full xl:w-5/12 lg:w-6/12 md:w-5/12">
-                        <div className="mt-6 md:mt-0 lg:mt-0 bg-gray-50 border border-gray-100 p-4 lg:p-8 rounded-lg">
-                          <Card />
+
+                    </div>
+                  </div>
+                </div>
+
+                {/* related products */}
+                {relatedProduct?.length >= 2 && (
+                  <div className="pt-10 lg:pt-20 lg:pb-10">
+                    <h3 className="leading-7 text-lg lg:text-xl mb-3 font-semibold font-serif hover:text-gray-600">
+                      {t("common:relatedProducts")}
+                    </h3>
+                    <div className="flex">
+                      <div className="w-full">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-6 gap-2 md:gap-3 lg:gap-3">
+                          {relatedProduct?.slice(1, 13).map((product, i) => (
+                            <ProductCard
+                              key={product._id}
+                              product={product}
+                              attributes={attributes}
+                            />
+                          ))}
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
-
-              {/* related products */}
-              {relatedProduct?.length >= 2 && (
-                <div className="pt-10 lg:pt-20 lg:pb-10">
-                  <h3 className="leading-7 text-lg lg:text-xl mb-3 font-semibold font-serif hover:text-gray-600">
-                    {t("common:relatedProducts")}
-                  </h3>
-                  <div className="flex">
-                    <div className="w-full">
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-6 gap-2 md:gap-3 lg:gap-3">
-                        {relatedProduct?.slice(1, 13).map((product, i) => (
-                          <ProductCard
-                            key={product._id}
-                            product={product}
-                            attributes={attributes}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </Layout>

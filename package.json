@@ -1,7 +1,7 @@
 {
-  "name": "kachabazar-store",
+  "name": "karas-atomic",
   "version": "0.1.0",
-  "description": "this is kachabazar-store built with next.js and tailwindcss",
+  "description": "this is karas-atomic built with next.js and tailwindcss",
   "homepage": "https://kachabazar-store.vercel.app/",
   "private": true,
   "scripts": {

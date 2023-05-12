@@ -58,6 +58,13 @@ const NavBarTop = () => {
 
             <div className="lg:text-right flex items-center">
 
+              <Link href="/faq">
+                <a className="font-medium hover:text-emerald-600">
+
+                  {t("common:FAQ")}
+                </a>
+              </Link>
+              <span className="mx-2">|</span>
               <Link href="/about-us">
                 <a className="font-medium hover:text-emerald-600">
 

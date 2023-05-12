@@ -11,19 +11,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ImageCarousel = ({ images, handleChangeImage, prevRef, nextRef }) => {
   return (
     <>
-      {/* <Carousel showArrows={false} showThumbs={true}>
-        {images?.map((img, i) => (
-          <button key={i + 1} onClick={() => handleChangeImage(img)}>
-            <Image
-              className="border inline-flex items-center justify-center px-3 py-1 mt-2"
-              src={img}
-              alt="product"
-              width={85}
-              height={85}
-            />
-          </button>
-        ))}
-      </Carousel> */}
 
       <Swiper
         onInit={(swiper) => {
@@ -37,49 +24,6 @@ const ImageCarousel = ({ images, handleChangeImage, prevRef, nextRef }) => {
         allowTouchMove={false}
         loop={true}
         slidesPerView={4}
-        // breakpoints={{
-        //   // when window width is >= 640px
-        //   375: {
-        //     width: 375,
-        //     slidesPerView: 2,
-        //   },
-        //   // when window width is >= 768px
-        //   414: {
-        //     width: 414,
-        //     slidesPerView: 3,
-        //   },
-        //   // when window width is >= 768px
-        //   660: {
-        //     width: 660,
-        //     slidesPerView: 4,
-        //   },
-
-        //   // when window width is >= 768px
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 6,
-        //   },
-
-        //   // when window width is >= 768px
-        //   991: {
-        //     width: 991,
-        //     slidesPerView: 8,
-        //   },
-
-        //   // when window width is >= 768px
-        //   1140: {
-        //     width: 1140,
-        //     slidesPerView: 9,
-        //   },
-        //   1680: {
-        //     width: 1680,
-        //     slidesPerView: 10,
-        //   },
-        //   1920: {
-        //     width: 1920,
-        //     slidesPerView: 10,
-        //   },
-        // }}
         modules={[Navigation]}
         className="mySwiper image-carousel"
       >
