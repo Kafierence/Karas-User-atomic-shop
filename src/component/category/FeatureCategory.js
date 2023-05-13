@@ -32,6 +32,7 @@ const FeatureCategory = () => {
 
   return (
     <>
+
       {error ? (
         <p className="flex justify-center align-middle items-center m-auto text-xl text-red-500">
           <span> {error}</span>

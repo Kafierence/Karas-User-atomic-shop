@@ -413,6 +413,7 @@
   "CONTACT_CONTENT":"We are available 24/7, Need help? Call Us ",
   "CALL_US":"Call Us",
   "CURVE":"Curve",
+  "CURRENCY":"Currency",
 
   "DASHBOARD":"Dashboard",
 
@@ -443,11 +444,12 @@
   "EMAIL":"Email",
   "EMAIL_ADMIN":"vannam34760@gmail.com",
   "END_IN":"End in",
-  
+
 
   "SIZE_GUIDE":"Size Guide",
   "SMART_DEVICES":"Smart Devices",
   "SHOP":"Shop",
+  "SOLD":"Sold",
   "SIGN_OUT":"Sign out",
 
   "MY_ORDERS":"My orders",
@@ -460,7 +462,9 @@
   
   "TABLET":"Tablet",
   "TERM_AND_CONDITION":"Term & Condition",
-  "TELL_ADMIN":"0987011701"
+  "TELL_ADMIN":"0987011701",
+
+  "IMAGE":"Image"
 
 
 

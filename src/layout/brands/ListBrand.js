@@ -19,6 +19,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ProductSaleCard from '@component/product/ProductSaleCard';
 const ListBrand = () => {
     const { t } = useTranslation();
     const brandsLogo = [

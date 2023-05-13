@@ -49,8 +49,8 @@ const Footer = () => {
       link: "/search?Category=smart-devices",
     },
     {
-      label: t("common:SMART_DEVICES"),
-      link: "/search?Category=smart-devices",
+      label: t("common:CURVE"),
+      link: "/search?Category=curve",
     }
   ]
 
