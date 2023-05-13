@@ -15,6 +15,8 @@ import MainCarousel from "@component/carousel/MainCarousel";
 import FeatureCategory from "@component/category/FeatureCategory";
 import Loading from "@component/preloader/Loading";
 import AttributeServices from "@services/AttributeServices";
+import FooterTop from "@layout/footer/FooterTop";
+import ProductSaleCard from "@component/product/ProductSaleCard";
 
 const Home = ({ popularProducts, discountProducts, attributes }) => {
   const { t } = useTranslation();
@@ -124,6 +126,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                   </p>
                 </div>
               </div>
+              <ProductSaleCard />
               <div className="flex">
                 <div className="w-full">
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-6 gap-2 md:gap-3 lg:gap-3">
@@ -139,6 +142,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             </div>
           </div>
+          <FooterTop />
         </Layout>
       )}
     </>

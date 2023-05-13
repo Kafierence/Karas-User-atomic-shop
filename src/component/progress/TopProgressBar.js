@@ -14,7 +14,7 @@ const TopProgressBar = () => {
       trickleSpeed: 500,
       parent: '#progress-navigation',
     });
-    console.log('Run Event Progress');
+
     const handleRouteStart = () => NProgress.start();
     const handleRouteDone = () => NProgress.done();
 

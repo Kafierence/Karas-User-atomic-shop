@@ -6,7 +6,7 @@
   "HOME": "HOME",
   "About Us": "About Us",
   "Products": "Products",
-  "FAQ": "FAQ",
+ 
   "Pages": "Pages",
   "Offers": "Offers",
   "Categories": "Categories",
@@ -418,7 +418,7 @@
 
   "FREE_RETURN":"Free Returns",
   "FLASH_SALE":"Flash Sale",
-
+  "FAQ": "FAQ",
   "HOW_TO_ORDER":"How to Order",
 
 
@@ -443,7 +443,7 @@
   "EMAIL":"Email",
   "EMAIL_ADMIN":"vannam34760@gmail.com",
   "END_IN":"End in",
-
+  
 
   "SIZE_GUIDE":"Size Guide",
   "SMART_DEVICES":"Smart Devices",
@@ -454,7 +454,10 @@
 
   "LAPTOP":"Laptop",
   "LOCATION":"Location",
+  "LASTEST_DISCOUNTED_PRODUCTS_TITLE":"Lastest Discounted Products",
+  "LASTEST_DISCOUNTED_PRODUCT_CONTENT":"See Our latest discounted products below. Choose your daily needs from here and get a special discount with free shipping.",
 
+  
   "TABLET":"Tablet",
   "TERM_AND_CONDITION":"Term & Condition",
   "TELL_ADMIN":"0987011701"

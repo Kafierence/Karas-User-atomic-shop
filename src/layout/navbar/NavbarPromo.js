@@ -65,8 +65,13 @@ const NavbarPromo = () => {
                         {t("common:Contact Us")}
                       </a>
                     </Link>
+                    <Link href="/faq">
+                      <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">
+                        {t("common:FAQ")}
+                      </a>
+                    </Link>
 
-                    <Popover className="relative font-serif">
+                    {/*     <Popover className="relative font-serif">
                       <Popover.Button className="group inline-flex items-center py-2 text-sm font-medium hover:text-emerald-600 focus:outline-none">
                         <span>{t("common:Pages")}</span>
                         <ChevronDownIcon
@@ -106,7 +111,7 @@ const NavbarPromo = () => {
                           </div>
                         </Popover.Panel>
                       </Transition>
-                    </Popover>
+                    </Popover> */}
                     <Link href="/offer">
                       <a className="relative inline-flex items-center h-6 bg-red-100 font-serif ml-4 py-0 px-2 rounded text-sm font-medium text-red-500 hover:text-emerald-600">
                         {t("common:Offers")}

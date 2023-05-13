@@ -17,9 +17,9 @@ const Settinglanguage = () => {
             try {
                 const res = await SettingServices.getAllLanguages();
                 setData(res);
-
                 const result = res?.find((lang) => lang?.iso_code === locale);
                 setCurrentLang(result);
+
             } catch (err) {
                 notifyError(err);
                 // console.log("error on getting lang", err);
@@ -39,18 +39,24 @@ const Settinglanguage = () => {
                 <div className="dropdown-content">
                     {data.map((language, i) => {
                         return (
-                            <Link
-                                key={i + 1}
-                                href="/"
-                                locale={`${language.language_code}`}
-                            >
-                                <a onClick={() => setCurrentLang(language)}>
-                                    <div
-                                        className={`flot-l flag ${language?.flag?.toLowerCase()}`}
-                                    ></div>
-                                    {language?.name}
-                                </a>
-                            </Link>
+                            <>
+                                {
+                                    language.status !== "hide" &&
+                                    <Link
+                                        key={i + 1}
+                                        href="/"
+                                        locale={`${language.iso_code}`}
+                                    >
+
+                                        <a onClick={() => setCurrentLang(language)}>
+                                            <div
+                                                className={`flot-l flag ${language?.flag?.toLowerCase()}`}
+                                            ></div>
+                                            {language?.name}
+                                        </a>
+                                    </Link>
+                                }
+                            </>
                         );
                     })}
                 </div>
