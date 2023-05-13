@@ -408,12 +408,15 @@
   "ADDRESS_ADMIN":"Karas Galaxy , Planet Earth",
 
   "BRANDS":"Brands",
+  "BEAUTY_AND_HEALTH":"Beauty & Health's",
 
   "CONTACT_US":"Contact Us",
   "CONTACT_CONTENT":"We are available 24/7, Need help? Call Us ",
   "CALL_US":"Call Us",
   "CURVE":"Curve",
   "CURRENCY":"Currency",
+  "COMPUTER":"Computer",
+
 
   "DASHBOARD":"Dashboard",
 
@@ -421,6 +424,24 @@
   "FLASH_SALE":"Flash Sale",
   "FAQ": "FAQ",
   "HOW_TO_ORDER":"How to Order",
+  "FAQ_QUESTION_1": "How does the karas atomic shop work?",
+  "FAQ_QUESTION_1_ANS":"The Karas Store Shop Work in follow B2C.It mean that your orders go into queue of processing pending before be accepted from adminstative.So if you have any problem , free to contact me!",
+  "FAQ_QUESTION_2":"Can I cancel my subscription anytime?",
+  "FAQ_QUESTION_2_ANS":"Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.",
+  "FAQ_QUESTION_3":"What payment methods do you accept?",
+  "FAQ_QUESTION_3_ANS":"",
+  "FAQ_QUESTION_4":"Do you offer loyalty points or reward points, gift certificates, etc.?",
+  "FAQ_QUESTION_4_ANS":"",
+  "FAQ_QUESTION_5":"How long have you been in business?",
+  "FAQ_QUESTION_5_ANS":"",
+  "FAQ_QUESTION_6":"What makes you different from your competitors?",
+  "FAQ_QUESTION_6_ANS":"",
+  "FAQ_QUESTION_7":"What advance technologies will be upgrade in this website ?",
+  "FAQ_QUESTION_7_ANS":"The first is PWA => Service worker",
+
+  "KID":"Kid",
+
+
 
 
 
@@ -431,6 +452,7 @@
   "PACKING":"Packing",
   "PROCESS_TO_CHECKOUT":"Process to Checkout",
   "PRIVACY_POLICY":"Privacy Policy",
+  "PET_SUPPLIES":"Pet supplies",
 
   "RESET":"Reset",
   "RETURNED":"Returned",
@@ -444,6 +466,7 @@
   "EMAIL":"Email",
   "EMAIL_ADMIN":"vannam34760@gmail.com",
   "END_IN":"End in",
+  "ELECTRONIC":"ELectronics",
 
 
   "SIZE_GUIDE":"Size Guide",
@@ -451,6 +474,9 @@
   "SHOP":"Shop",
   "SOLD":"Sold",
   "SIGN_OUT":"Sign out",
+  "SMART_HOME":"Smart Home",
+
+  
 
   "MY_ORDERS":"My orders",
 

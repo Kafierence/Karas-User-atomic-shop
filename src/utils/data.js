@@ -174,7 +174,7 @@ const contactData = [
     title: 'contact-page-box1-title',
     info: 'contact-page-box1-info',
     icon: FiMail,
-    contact: 'kachabazar@gmail.com',
+    contact: 'vannam34760@gmail.com',
     className: 'bg-emerald-100',
   },
   {
@@ -182,7 +182,7 @@ const contactData = [
     title: 'contact-page-box2-title',
     info: 'contact-page-box2-info',
     icon: FiPhoneCall,
-    contact: '029-00124667',
+    contact: '0987011701',
     className: 'bg-yellow-100',
   },
   {
