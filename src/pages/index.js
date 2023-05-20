@@ -16,6 +16,7 @@ import FeatureCategory from "@component/category/FeatureCategory";
 import Loading from "@component/preloader/Loading";
 import AttributeServices from "@services/AttributeServices";
 import FooterTop from "@layout/footer/FooterTop";
+import ProductSaleCard from "@component/product/ProductSaleCard";
 
 
 const Home = ({ popularProducts, discountProducts, attributes }) => {

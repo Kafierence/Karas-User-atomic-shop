@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import SettingServices from "@services/SettingServices";
 import Link from 'next/link';
+import { Box } from '@chakra-ui/react';
 const Settinglanguage = () => {
     const { t } = useTranslation();
     const router = useRouter();
@@ -37,28 +38,28 @@ const Settinglanguage = () => {
                     &nbsp;<i className="fas fa-angle-down"></i>
                 </button>
                 <div className="dropdown-content">
-                    {data.map((language, i) => {
-                        return (
-                            <>
-                                {
-                                    language.status !== "hide" &&
-                                    <Link
-                                        key={i + 1}
-                                        href="/"
-                                        locale={`${language.iso_code}`}
-                                    >
+                    {data.map((language) =>
+                    (
+                        <>
+                            {
+                                language.status !== "hide" &&
+                                <Link
+                                    key={language.iso_code}
+                                    href="/"
+                                    locale={`${language.iso_code}`}
+                                >
 
-                                        <a onClick={() => setCurrentLang(language)}>
-                                            <div
-                                                className={`flot-l flag ${language?.flag?.toLowerCase()}`}
-                                            ></div>
-                                            {language?.name}
-                                        </a>
-                                    </Link>
-                                }
-                            </>
-                        );
-                    })}
+                                    <Box onClick={() => setCurrentLang(language)}>
+                                        <Box
+                                            className={`flot-l flag ${language?.flag?.toLowerCase()}`} />
+
+                                        {language?.name}
+                                    </Box>
+                                </Link>
+                            }
+                        </>
+                    )
+                    )}
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import Link from "next/link";
-import Image from "next/image";
+
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useCart } from "react-use-cart";
@@ -15,7 +15,7 @@ import { UserContext } from "@context/UserContext";
 import LoginModal from "@component/modal/LoginModal";
 import CartDrawer from "@component/drawer/CartDrawer";
 import { SidebarContext } from "@context/SidebarContext";
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import ProfileDropdown from "@component/dropdown/ProfileDropdown";
 
 const Navbar = () => {
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="top-bar h-16 lg:h-auto flex items-center justify-between py-4 mx-auto">
             <Link href="/">
               <a className="mr-3 lg:mr-12 xl:mr-12 hidden md:hidden lg:block">
-                Logo Soon
+                <Image src='/logo/logo-light.svg' width={"auto"} height={50} />
               </a>
             </Link>
             <div className="border rounded-lg w-full transition-all duration-200 ease-in-out lg:flex lg:max-w-[520px] xl:max-w-[750px] 2xl:max-w-[900px] md:mx-12 lg:mx-4 xl:mx-0">

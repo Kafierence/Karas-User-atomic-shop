@@ -119,7 +119,7 @@ export const Progress = {
         size: 'sm',
       },
       filledTrack: {
-        bg: colors.secondary.original[400],
+        bg: colors.secondary.original[200],
       },
     },
   },
