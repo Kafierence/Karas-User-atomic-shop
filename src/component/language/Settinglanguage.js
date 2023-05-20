@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import SettingServices from "@services/SettingServices";
-import Link from 'next/link';
-import { Box } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import { Box, Link, useDisclosure } from '@chakra-ui/react';
 const Settinglanguage = () => {
     const { t } = useTranslation();
     const router = useRouter();
@@ -27,25 +27,28 @@ const Settinglanguage = () => {
             }
         })();
     }, []);
+    const { isOpen, onToggle, onClose } = useDisclosure();
     return (
         <>
-            <div className="dropdown ">
-                <div
+            <Box className="dropdown ">
+                <Box
                     className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
-                ></div>
+                ></Box>
                 <button className="dropbtn">
                     {currentLang?.name}
                     &nbsp;<i className="fas fa-angle-down"></i>
                 </button>
-                <div className="dropdown-content">
+                <Box className="dropdown-content" p={4} >
                     {data.map((language) =>
                     (
                         <>
                             {
                                 language.status !== "hide" &&
                                 <Link
+                                    as={NextLink}
                                     key={language.iso_code}
                                     href="/"
+                                    cursor="pointer"
                                     locale={`${language.iso_code}`}
                                 >
 
@@ -60,8 +63,8 @@ const Settinglanguage = () => {
                         </>
                     )
                     )}
-                </div>
-            </div>
+                </Box>
+            </Box>
 
 
 

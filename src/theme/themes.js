@@ -10,7 +10,7 @@ const config = {
 export const backgrounds = {
   gradient: {
     g: {
-      100: 'linear-gradient(90deg, #5BA2E7 0%, #2A7AD7 100%)',
+      100: ' linear-gradient(315deg, #20bf55 0%, #01baef 74%) ',
       200: 'linear-gradient(90deg, #AADAFB 0%, #7DBEF3 100%)',
       300: 'linear-gradient(90deg, #3969A6 0%, #0E336B 100%)',
       400: 'linear-gradient(90deg, #9CC8F0 0%, #6499D2 100%)',

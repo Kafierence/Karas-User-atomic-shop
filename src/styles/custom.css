@@ -458,6 +458,7 @@ p:not(:last-of-type) {
   font-family: var(--rajdhani);
   text-transform: uppercase;
   font-weight: 400;
+  cursor: pointer;
 }
 .dropdown-content a img {
   margin-right: 7px;

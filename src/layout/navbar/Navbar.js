@@ -18,6 +18,7 @@ import { SidebarContext } from "@context/SidebarContext";
 import { Box, Image } from "@chakra-ui/react";
 import ProfileDropdown from "@component/dropdown/ProfileDropdown";
 
+
 const Navbar = () => {
   const { t } = useTranslation();
   const [imageUrl, setImageUrl] = useState("");
@@ -59,7 +60,7 @@ const Navbar = () => {
           <div className="top-bar h-16 lg:h-auto flex items-center justify-between py-4 mx-auto">
             <Link href="/">
               <a className="mr-3 lg:mr-12 xl:mr-12 hidden md:hidden lg:block">
-                <Image src='/logo-light.svg' width={"auto"} height={50} />
+                <Image src="/logo/Logo-light.svg" width={"auto"} height={50} />
               </a>
             </Link>
             <div className="border rounded-lg w-full transition-all duration-200 ease-in-out lg:flex lg:max-w-[520px] xl:max-w-[750px] 2xl:max-w-[900px] md:mx-12 lg:mx-4 xl:mx-0">
