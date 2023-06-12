@@ -1,5 +1,9 @@
 {
     "/=================*SHOP - PAYMENT*=================/": "",
-    "CHECKOUT":"Checkout", 
-    "SHOP_NOW": "Shop Now"
+  
+    "Shop-Now": "Shop Now",
+    
+    "/=================*SEARCH*=================/": "",
+    "Search-Placeholder":"Search for products (e.g. fish, apple, oil)",
+    "Top-Search": "Search for product (e.g. fish, apple, oil)"
 }
