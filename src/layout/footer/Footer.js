@@ -148,8 +148,8 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-8 items-center justify-between">
             <div className="col-span-1">
               <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
-                {/*    {t("common:footer-follow-me")} */}
-                {t("author:AUTHOR")}
+                {t("common:footer-follow-me")}
+
               </span>
               <LinkSocial />
             </div>
