@@ -22,28 +22,17 @@
 
   "search-placeholder": "Search for products (e.g. fish, apple, oil)",
 
+
   "/=================*Top Slider*=================/": "",
 
-  "Slider1Title": "The Best Quality Products Guaranteed!",
-  "Slider1description": "Dramatically facilitate effective total linkage for go forward processes...",
+  "SLIDER_1_TITLE": "The Best Quality Products Guaranteed!",
+  "SLIDER_1_DESCRIPTION": "Dramatically facilitate effective total linkage for go forward processes...",
 
-  "Slider2Title": "Best Different Type of Grocery Store",
-  "Slider2description": "Quickly aggregate empowered networks after emerging products...",
+  "SLIDER_2_TITLE": "Best Different Type of Grocery Store",
+  "SLIDER_2_DESCRIPTION": "Quickly aggregate empowered networks after emerging products...",
 
-  "Slider3Title": "Quality Freshness Guaranteed!",
-  "Slider3description": "Intrinsicly fashion performance based products rather than accurate benefits...",
-
-  "Slider-btn": "Shop Now",
-
-  "/=================*page*==================/": "",
-  "offer-page": "Offer",
-  "checkout-page": "Checkout",
-  "faq-page": " FAQ",
-  "about-us-page": " About Us",
-  "contact-us-page": "Contact Us",
-  "privacy-policy-page": " Privacy Policy",
-  "terms-and-conditions-page": "Terms & Conditions",
-  "not-found-page": "404",
+  "SLIDER_3_TITLE": "Quality Freshness Guaranteed!",
+  "SLIDER_3_DESCRIPTION": "Intrinsicly fashion performance based products rather than accurate benefits...",
 
   "/=================*Offer Card*=================/": "",
   "mega-offer": "Mega Offer",

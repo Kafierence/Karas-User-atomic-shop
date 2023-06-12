@@ -1,3 +1,16 @@
 {
-    "AUTHOR":"FUck"
+    "/=================*AUTHOR*=================/": "",
+    "AUTHOR":"KARAS",
+    "OWNER-NUMBER":"+84 098701****",
+    "OWNER-EMAIL":"vannam34760@gmail.com",
+    
+    "/=================*PAGE*=================/": "",
+    "OFFER-PAGE": "Offer",
+    "CHECKOUT-PAGE": "Checkout",
+    "FAQ-PAGE": " FAQ",
+    "ABOUT-US-PAGE": " About Us",
+    "CONTACT-US-PAGE": "Contact Us",
+    "PRIVACY-POLICY-PAGE": " Privacy Policy",
+    "TERMS-AND-CONDITIONS-PAGE": "Terms & Conditions",
+    "NOT-FOUND-PAGE": "404"
 }
