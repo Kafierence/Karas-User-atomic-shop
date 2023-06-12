@@ -91,7 +91,7 @@ const Dashboard = ({ title, description, children }) => {
                   <span className="p-2 flex font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                     <span className="mr-2">
                       <IoLockOpenOutline />
-                    </span>{" "}
+                    </span>
                     <button
                       onClick={handleLogOut}
                       className="inline-flex items-center justify-between text-sm font-medium w-full hover:text-emerald-600"

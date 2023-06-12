@@ -1,7 +1,7 @@
 {
-  "locales": ["en", "de"],
+  "locales": ["en", "de","vi"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common"]
+    "*": ["common","author","shop","product"]
   }
 }

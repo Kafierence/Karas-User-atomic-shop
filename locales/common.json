@@ -1,0 +1,40 @@
+{
+    "/=================*AUTHOR CONTACT - PAGE*=================/": "",
+    "CONTACT_US":"Contact Us",
+    "CALL_US":"We are available 24/7, Need help? Call Us :",
+    "HOME":"Home",
+
+    "/=================*POLICY*=================/": "",
+    "PRIVACY_POLICY":"Privacy Policy",
+    "TERM_&_CONDITIONS":"Term & Conditions",
+
+    "/=================*Top Slider*=================/": "",
+
+    "SLIDER_1_TITLE": "The Best Quality Products Guaranteed!",
+    "SLIDER_1_DESCRIPTION": "Dramatically facilitate effective total linkage for go forward processes...",
+
+    "SLIDER_2_TITLE": "Best Different Type of Grocery Store",
+    "SLIDER_2_DESCRIPTION": "Quickly aggregate empowered networks after emerging products...",
+
+    "SLIDER_3_TITLE": "Quality Freshness Guaranteed!",
+    "SLIDER_3_DESCRIPTION": "Intrinsicly fashion performance based products rather than accurate benefits...",
+
+  "/=================*SHOP - PAYMENT*=================/": "",
+    "CHECKOUT":"Checkout", 
+    "SHOP_NOW": "Shop Now",
+  
+
+  "/=================*SEARCH*=================/": "",
+
+    "SEARCH_PLACEHOLDER":"Search for products (e.g. fish, apple, oil)",
+    "TOP_SEARCH": "Search for product (e.g. fish, apple, oil)",
+
+
+  "/=================*PRODUCT*=================/": "",
+    "CATEGORIES":"Categories",
+
+  "/=================*ACCOUNT*=================/": "",
+  "MY_ACCOUNT":"My Account"
+
+  
+}
