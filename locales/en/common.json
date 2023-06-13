@@ -96,19 +96,7 @@
   "cartEmptyText": " No items added in your cart. Please add product to your cart list.",
   "proceedToCheckoutBtn": "Proceed To Checkout",
 
-  "/=================* Login Popup * =================/": "",
-
-  "loginTitle": "Login",
-  "loginBoxText": "Login with your email and password",
-  "email": "Email",
-  "password": "Password",
-  "forgotPassword": "Forgot password?",
-  "loginBtn": "Login",
-  "or": "OR",
-  "notAccount": "Not have a account",
-  "alreadyHaveAccount": "Already have a account ?",
-  "register": "Register",
-
+  
 
 
   "/=================* Invoice * =================/": "",
@@ -130,47 +118,6 @@
   "thankyou": "Thank you",
   "orderReceivedMsg": "Your order have been received !",
 
-  "/=================* My account * =================/": "",
-
-  "dashboard": "Dashboard",
-  "myOrders": "My Orders",
-  "updateProfile": "Update Profile",
-  "changePassword": "Change Password",
-  "logout": "Logout",
-  "noOrder": "You Have no order Yet!",
-
-  "action": "ACTION",
-  "id": "ID",
-  "oderTime": "ORDERTIME",
-  "method": "METHOD",
-  "status": "STATUS",
-  "total": "TOTAL",
-  "details": "Details",
-
-  "next": "Next",
-  "previous": "Previous",
-
-  "dashboardText": "This is User Dashboard",
-  "totalOrder": "Total Order",
-  "pendingOrder": "Pending Order",
-  "processingOrder": "Processing Order",
-  "completeOrder": "Complete Order",
-
-  "recentOrder": "Recent Order",
-
-  "photo": "Photo",
-  "fullName": "Full Name",
-  "yourAddress": "Your Address",
-  "phoneMobile": "Phone/Mobile",
-  "yourMobile": "Your Mobile Number",
-  "updateProfileBtn": "Update Profile",
-  "dragYourImageHere": "Drag your image here",
-  "currentPassword": "Current Password",
-  "yourCurrentPassword": "Your Current Password",
-  "newPassword": "New Password",
-  "yourNewPassword": "Your New Password",
-  "changePasswordBtn": "Change Password",
-
   "/=================* Search * =================/": "",
 
   "loadMoreBtn": "Load More",
@@ -181,24 +128,7 @@
   "highToLow": "High to Low",
   "sorryText": "Sorry, we can not find this product",
 
-  "/=================* faq* =================/": "",
-  "faq-title": "Frequently Asked Questions",
-  "Faq-question1": "How does the Karas work?",
-  "Faq-question1-ans": "Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.",
-  "Faq-question2": "Can I cancel my subscription anytime?",
-  "Faq-question2-ans": "Distinctively initiate error-free channels with highly efficient ROI. Intrinsicly envisioneer world-class data via best-of-breed best practices. Efficiently enable empowered e-tailers after cross-unit services. Uniquely expedite seamless e-tailers via cooperative interfaces. Monotonectally myocardinate customer directed meta-services whereas error-free scenarios.",
-  "Faq-question3": "Whice payment method you should accept?",
-  "Faq-question3-ans": "Holisticly engage sticky niche markets before collaborative collaboration and idea-sharing. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
-  "Faq-question4": "Can I cancel my subscription anytime?",
-  "Faq-question4-ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
-  "Faq-question5": "What is Karas EC2 auto scaling?",
-  "Faq-question5-ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
-  "Faq-question6": "What are the benefits of using Karas affliate?",
-  "Faq-question6-ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
-  "Faq-question7": "What is a affliates product configuration?",
-  "Faq-question7-ans": "Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.",
-  "Faq-question8": "What is fleet management and how is it different from dynamic scaling?",
-  "Faq-question8-ans": "Distinctively initiate error-free channels with highly efficient ROI. Intrinsicly envisioneer world-class data via best-of-breed best practices. Efficiently enable empowered e-tailers after cross-unit services. Uniquely expedite seamless e-tailers via cooperative interfaces. Monotonectally myocardinate customer directed meta-services whereas error-free scenarios.",
+  
 
   "/=================* privacy-policy * =================/": "",
 

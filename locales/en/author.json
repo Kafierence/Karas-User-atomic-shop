@@ -4,7 +4,8 @@
     "Author":"KARAS",
     "Owner-Number":"+84 098701****",
     "Owner-Email":"vannam34760@gmail.com",
-
+    "Owner-City":"Ho Chi Minh City",
+    "Owner-Street-Address":"~~~ ",
     "/=================*ACCOUNT*=================/": "",
 
     "Personal-Details": "Personal Details",
@@ -20,29 +21,41 @@
     "Country": "Country",
     "Zip-Postal": "ZIP / Postal",
     "Shipping-Cost": "Shipping Cost",
-    "Payment-Method": "Payment Method",
-    "Cash-On-Delivery": "Cash On Delivery",
-    "Credit-Card": "Credit Card",
-    "PayPal": "PayPal",
 
-    "Continue-Shopping": "Continue Shopping",
-    "Confirm-Order": "Confirm Order",
-    "Processing": "Processing",
-
-    "Order-Summary": "Order Summary",
-    "Apply": "Apply",
-    "Coupon-Code": "Input your coupon code",
-    "Subtotal": "Subtotal",
-
-    "Discount": "Discount",
-    "Total-Cost": "TOTAL COST",
+    "Photo": "Photo",
+    "Your-Address": "Your Address",
+    "Phone-Mobile": "Phone/Mobile",
+    "Your-Mobile": "Your Mobile Number",
+    
+    "Drag-Your-Image-Here": "Drag your image here",
+    "Current-Password": "Current Password",
+    "Your-Current-Password": "Your Current Password",
+    "New-Password": "New Password",
+    "Your-New-Password": "Your New Password",
+   
 
     "Shipping-Method": "Shipping Method",
     "Signing-In":"Signing In",
     "Signing-Up":"Signing Up",
     "Create-Account":"Create an account",
     "Login":"Login",
+    "Login-Box-Text":"Login with your email and password",
+    "Forgot-Password":"Forgot Password",
+    "Not-Account":"Not have a account ?",
+    "Register":"Register",
+    "Or":"or",
+    "Already-Account":"Have already account",
     "Logout":"Logout",
+
+    "Dashboard": "Dashboard",
+    "Dashboard-Text": "This is User Dashboard",
+    "My-Orders": "My Orders",
+    "Update-Profile": "Update Profile",
+    "Change-Password": "Change Password",
+    
+
+    "No-Order": "You Have no order Yet!",
+
     "/=================*PAGE*=================/": "",
     "Offer": "Offer",
     "Checkout": "Checkout",
@@ -78,5 +91,29 @@
     "Page-Not-Found-Description":"Sorry! This page is not found! Please try again later",
     "/=================*Button*=================/": "",
     "Back-To-Home":"Back to Home",
-    "Shop-Now": "Shop Now"
+    "Shop-Now": "Shop Now",
+    "Continue-Shopping": "Continue Shopping",
+    "Next":"Next",
+    "Previous":"Previosus",
+    "Action":"Action",
+
+    "/=================* faq* =================/": "",
+  "Faq-Title": "Frequently Asked Questions",
+  "Faq-Question1": "How does the Karas work?",
+  "Faq-Question1-Ans": "Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.",
+  "Faq-Question2": "Can I cancel my subscription anytime?",
+  "Faq-Question2-Ans": "Distinctively initiate error-free channels with highly efficient ROI. Intrinsicly envisioneer world-class data via best-of-breed best practices. Efficiently enable empowered e-tailers after cross-unit services. Uniquely expedite seamless e-tailers via cooperative interfaces. Monotonectally myocardinate customer directed meta-services whereas error-free scenarios.",
+  "Faq-Question3": "Whice payment method you should accept?",
+  "Faq-Question3-Ans": "Holisticly engage sticky niche markets before collaborative collaboration and idea-sharing. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
+  "Faq-Question4": "Can I cancel my subscription anytime?",
+  "Faq-Question4-Ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
+  "Faq-Question5": "What is Karas EC2 auto scaling?",
+  "Faq-Question5-Ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
+  "Faq-Question6": "What are the benefits of using Karas affliate?",
+  "Faq-Question6-Ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
+  "Faq-Question7": "What is a affliates product configuration?",
+  "Faq-Question7-Ans": "Yes. You can cancel your subscription anytime. Your subscription will continue to be active until the end of your current term (month or year) but it will not auto-renew. Unless you delete your account manually, your account and all data will be deleted 60 days from the day your subscription becomes inactive.",
+  "Faq-Question8": "What is fleet management and how is it different from dynamic scaling?",
+  "Faq-Question8-Ans": "Distinctively initiate error-free channels with highly efficient ROI. Intrinsicly envisioneer world-class data via best-of-breed best practices. Efficiently enable empowered e-tailers after cross-unit services. Uniquely expedite seamless e-tailers via cooperative interfaces. Monotonectally myocardinate customer directed meta-services whereas error-free scenarios."
+
 }

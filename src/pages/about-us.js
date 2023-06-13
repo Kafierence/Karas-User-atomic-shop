@@ -11,7 +11,7 @@ const AboutUs = () => {
 
   return (
     <Layout title="About Us" description="This is about us page">
-      <PageHeader title="about-page-title" />
+      <PageHeader title="About-Us" />
 
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-20 py-10 px-4 sm:px-10">

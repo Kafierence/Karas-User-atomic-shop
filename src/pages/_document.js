@@ -12,7 +12,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.png" />
           <meta
             property="og:title"
-            content="Karas - Grocery Ecommerece Store"
+            content="Karas - Grocery Online Store"
           />
           <meta property="og:type" content="eCommerce Website" />
           <meta

@@ -65,10 +65,10 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                 <div className="mb-10 flex justify-center">
                   <div className="text-center w-full lg:w-2/5">
                     <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
-                      {t("common:Featured-title")}
+                      {t("common:Featured-Title")}
                     </h2>
                     <p className="text-base font-sans text-gray-600 leading-6">
-                      {t("common:Featured-sub-title")}
+                      {t("common:Featured-Sub-Title")}
                     </p>
                   </div>
                 </div>
@@ -81,10 +81,10 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               <div className="mb-10 flex justify-center">
                 <div className="text-center w-full lg:w-2/5">
                   <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
-                    {t("common:popular-products-title")}
+                    {t("common:Popular-Products-Title")}
                   </h2>
                   <p className="text-base font-sans text-gray-600 leading-6">
-                    {t("common:popular-products-sub-title")}
+                    {t("common:Popular-Products-Sub-Title")}
                   </p>
                 </div>
               </div>
@@ -120,10 +120,10 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               <div className="mb-10 flex justify-center">
                 <div className="text-center w-full lg:w-2/5">
                   <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
-                    {t("common:discounted-products-title")}
+                    {t("common:Discounted-Products-Title")}
                   </h2>
                   <p className="text-base font-sans text-gray-600 leading-6">
-                    {t("common:discounted-products-paragraph-text")}
+                    {t("common:Discounted-Products-Description")}
                   </p>
                 </div>
               </div>

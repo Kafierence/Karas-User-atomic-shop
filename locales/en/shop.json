@@ -1,8 +1,34 @@
 {
-    "/=================*SHOP - PAYMENT*=================/": "",
-  
-  
+    "/=================*SHOP - PAYMENT- Order*=================/": "",
+    "Payment-Method": "Payment Method",
+    "Cash-On-Delivery": "Cash On Delivery",
+    "Credit-Card": "Credit Card",
+    "PayPal": "PayPal",
+
     
+    "Confirm-Order": "Confirm Order",
+    "Processing": "Processing",
+
+    "Order-Summary": "Order Summary",
+    "Apply": "Apply",
+    "Coupon-Code": "Input your coupon code",
+    "Subtotal": "Subtotal",
+
+    "Discount": "Discount",
+    "Total-Cost": "TOTAL COST",
+
+    "Method":"Method",
+    "Oder-Time": "ORDERTIME",
+    "Status":"Status",
+    "Total": "TOTAL",
+    "Details": "Details",
+    "Tota-lOrder": "Total Order",
+    "Pending-Order": "Pending Order",
+    "Processing-Order": "Processing Order",
+    "Complete-Order": "Complete Order",
+  
+    "Recent-Order": "Recent Order",
+
     "/=================*SEARCH*=================/": "",
     "Search-Placeholder":"Search for products (e.g. fish, apple, oil)",
     "Top-Search": "Search for product (e.g. fish, apple, oil)"
