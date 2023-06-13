@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import FaceImage from 'public/facebook-page.png'
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     return await Document.getInitialProps(ctx);
@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content={FaceImage}
+            content="https://res.cloudinary.com/karas/image/upload/v1686625510/personal/facebook-page_k2qcvy.png"
           />
         </Head>
         <body>
