@@ -96,6 +96,12 @@
     "Next":"Next",
     "Previous":"Previosus",
     "Action":"Action",
+    "Load-More": "Load More",
+    "Items-Found":"Items Found",
+    "Sort-By-Price":"Sort By Price",
+    "Low-To-High":"Low To High",
+    "High-To-Low":"High To Low",
+    "Sorry-Text":"Sorry, We can not find this products",
 
     "/=================* faq* =================/": "",
   "Faq-Title": "Frequently Asked Questions",

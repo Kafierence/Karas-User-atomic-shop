@@ -28,6 +28,24 @@
     "Complete-Order": "Complete Order",
   
     "Recent-Order": "Recent Order",
+    "More-Info": "More Info",
+    "Show-Less": "Show Less",
+    "Stock-Out": "Stock Out",
+    "In-Stock": "In Stock",
+    "Add-To-Cart": "Add to Cart",
+    "Category": "Category",
+    "Share-Your-Social": "Share your social network",
+    "Share-Your-Social-Text": "For get lots of traffic from social network share this product",
+    "Related-Products": "Related Products",
+    "Stock": "Stock",
+  
+  
+  
+    "Shopping-Cart-Drawer-Title": "Shopping Cart",
+    "CloseBtn": "Close",
+    "Cart-Empty-Title": "Your cart is empty",
+    "Cart-Empty-Text": " No items added in your cart. Please add product to your cart list.",
+    "Proceed-To-Checkout": "Proceed To Checkout",
 
     "/=================*SEARCH*=================/": "",
     "Search-Placeholder":"Search for products (e.g. fish, apple, oil)",
