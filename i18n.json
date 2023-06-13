@@ -2,6 +2,6 @@
   "locales": ["en", "de","vi"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common","author","shop","product"]
+    "*": ["common"]
   }
 }

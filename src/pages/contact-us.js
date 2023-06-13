@@ -12,7 +12,7 @@ import InputArea from '@component/form/InputArea';
 import PageHeader from '@component/header/PageHeader';
 
 const ContactUs = () => {
-  const {t}=useTranslation()
+  const { t } = useTranslation()
   const {
     register,
     handleSubmit,
@@ -27,11 +27,11 @@ const ContactUs = () => {
 
   return (
     <Layout title="Contact Us" description="This is contact us page">
-      <PageHeader title="contact-page-title" />
+      <PageHeader title="Contact-Us" />
 
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-20 py-10 px-4 sm:px-10">
-          {/* contact promo */}
+
           <div className="grid md:grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-8 font-serif">
             {contactData.map((data) => (
               <div key={data.id} className="border p-10 rounded-lg text-center">
@@ -70,10 +70,10 @@ const ContactUs = () => {
               >
                 <div className="mb-12">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold font-serif mb-3">
-                  {t("common:contact-page-form-title")}
+                    {t("common:Contact-Page-Form-Title")}
                   </h3>
                   <p className="text-base opacity-90 leading-7">
-                  {t("common:contact-page-form-paragraph")}
+                    {t("common:Contact-Page-Form-Description")}
                   </p>
                 </div>
 
@@ -82,20 +82,20 @@ const ContactUs = () => {
                     <div className="w-full md:w-1/2 ">
                       <InputArea
                         register={register}
-                        label={t("common:contact-page-form-input-name")}
+                        label={t("common:Contact-Page-Form-Input-Name")}
                         name="name"
                         type="text"
-                        placeholder={t("common:contact-page-form-plaholder-name")}
+                        placeholder={t("common:Contact-Page-Form-Plaholder-Name")}
                       />
                       <Error errorName={errors.name} />
                     </div>
                     <div className="w-full md:w-1/2 md:ml-2.5 lg:ml-5 mt-2 md:mt-0">
                       <InputArea
                         register={register}
-                        label={t("common:contact-page-form-input-email")}
+                        label={t("common:Contact-Page-Form-Input-Email")}
                         name="email"
                         type="email"
-                        placeholder={t("common:contact-page-form-plaholder-email")}
+                        placeholder={t("common:Contact-Page-Form-Plaholder-Email")}
                       />
                       <Error errorName={errors.email} />
                     </div>
@@ -103,15 +103,15 @@ const ContactUs = () => {
                   <div className="relative">
                     <InputArea
                       register={register}
-                      label={t("common:contact-page-form-input-subject")}
+                      label={t("common:Contact-Page-Form-Input-Subject")}
                       name="subject"
                       type="text"
-                      placeholder={t("common:contact-page-form-plaholder-subject")}
+                      placeholder={t("common:Contact-Page-Form-Plaholder-Subject")}
                     />
                     <Error errorName={errors.subject} />
                   </div>
                   <div className="relative mb-4">
-                    <Label label={t("common:contact-page-form-input-message")} />
+                    <Label label={t("common:Contact-Page-Form-Input-Message")} />
                     <textarea
                       {...register('message', {
                         required: `Message is required!`,
@@ -121,7 +121,7 @@ const ContactUs = () => {
                       autoComplete="off"
                       spellCheck="false"
                       rows="4"
-                      placeholder={t("common:contact-page-form-plaholder-message")}
+                      placeholder={t("common:Contact-Page-Form-Plaholder-Message")}
                     ></textarea>
                     <Error errorName={errors.message} />
                   </div>
@@ -130,7 +130,7 @@ const ContactUs = () => {
                       data-variant="flat"
                       className="md:text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md placeholder-white focus-visible:outline-none focus:outline-none bg-emerald-500 text-white px-5 md:px-6 lg:px-8 py-3 md:py-3.5 lg:py-3 hover:text-white hover:bg-emerald-600 h-12 mt-1 text-sm lg:text-base w-full sm:w-auto"
                     >
-                     {t("common:contact-page-form-send-btn")}
+                      {t("common:Contact-Page-Form-Send")}
                     </button>
                   </div>
                 </div>
