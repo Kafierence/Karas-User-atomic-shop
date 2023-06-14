@@ -9,95 +9,95 @@ const TermAndConditions = () => {
   const { t } = useTranslation();
   return (
     <Layout title="Terms & Conditions" description="This is terms and conditions page">
-      <PageHeader title="Terms & Conditions" />
+      <PageHeader title="Terms-&-Conditions" />
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-20 py-10 px-3 sm:px-10">
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:terms-condition-welcome")}
+              {t("common:Terms-Condition-Welcome")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:terms-condition-welcome-docs1")}</p>
-              <p>{t("common:terms-condition-welcome-docs2")}</p>
+              <p>{t("common:Terms-Condition-Welcome-Docs1")}</p>
+              <p>{t("common:Terms-Condition-Welcome-Docs2")}</p>
             </div>
           </div>
           <div className="mb-6 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:terms-condition-cookies")}
+              {t("common:Terms-Condition-Cookies")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:terms-condition-cookies-docs")}</p>
+              <p>{t("common:Terms-Condition-Cookies-Docs")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:terms-condition-license")}
+              {t("common:Terms-Condition-License")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:terms-condition-license-docs")}</p>
+              <p>{t("common:Terms-Condition-License-Docs")}</p>
 
               <ul>
-                <strong className="mb-2"> {t("common:terms-condition-license-docs0")}</strong>
-                <li>{t("common:terms-condition-license-docs1")}</li>
-                <li>{t("common:terms-condition-license-docs2")}</li>
-                <li>{t("common:terms-condition-license-docs3")}</li>
-                <li>{t("common:terms-condition-license-docs4")}</li>
-                <li> {t("common:terms-condition-license-docs5")}</li>
-                <li>{t("common:terms-condition-license-docs6")}</li>
-                <li>{t("common:terms-condition-license-docs7")}</li>
+                <strong className="mb-2"> {t("common:Terms-Condition-License-Docs0")}</strong>
+                <li>{t("common:Terms-Condition-License-Docs1")}</li>
+                <li>{t("common:Terms-Condition-License-Docs2")}</li>
+                <li>{t("common:Terms-Condition-License-Docs3")}</li>
+                <li>{t("common:Terms-Condition-License-Docs4")}</li>
+                <li> {t("common:Terms-Condition-License-Docs5")}</li>
+                <li>{t("common:Terms-Condition-License-Docs6")}</li>
+                <li>{t("common:Terms-Condition-License-Docs7")}</li>
               </ul>
-              <p>{t("common:terms-condition-license-docs8")}</p>
+              <p>{t("common:Terms-Condition-License-Docs8")}</p>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">
               <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
                 {t("common:terms-condition-liability")}
               </h2>
               <div className="font-sans leading-7">
-                <p>{t("common:terms-condition-liability-docs")}</p>
+                <p>{t("common:Terms-Condition-Liability-Docs")}</p>
               </div>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">
               <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-                {t("common:terms-condition-privacy")}
+                {t("common:Terms-Condition-Privacy")}
               </h2>
               <div className="font-sans leading-7">
                 <p>
-                  {t("common:terms-condition-privacy-docs1")}
+                  {t("common:Terms-Condition-Privacy-Docs1")}
                   <Link href="/privacy-policy">
-                    <a className="text-emerald-500"> {t("common:terms-condition-privacy-docs2")}</a>
+                    <a className="text-emerald-500"> {t("common:Terms-Condition-Privacy-Docs2")}</a>
                   </Link>{" "}
                 </p>
               </div>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">
               <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-                {t("common:terms-condition-rights")}
+                {t("common:Terms-Condition-Rights")}
               </h2>
               <div className="font-sans leading-7">
-                <p>{t("common:terms-condition-rights-docs")}</p>
+                <p>{t("common:Terms-Condition-rights-Docs")}</p>
               </div>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">
               <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-                {t("common:terms-condition-website")}
+                {t("common:Terms-Condition-Website")}
               </h2>
               <div className="font-sans leading-7">
-                <p>{t("common:terms-condition-website-docs")}</p>
+                <p>{t("common:Terms-Condition-Website-Docs")}</p>
               </div>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">
               <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-                {t("common:terms-condition-disclaimer")}
+                {t("common:Terms-Condition-Disclaimer")}
               </h2>
               <div className="font-sans leading-7">
-                <p>{t("common:terms-condition-disclaimer-docs")}</p>
+                <p>{t("common:Terms-Condition-Disclaimer-Docs")}</p>
                 <ul>
-                  <li>{t("common:terms-condition-disclaimer-docs1")}</li>
-                  <li>{t("common:terms-condition-disclaimer-docs2")}</li>
-                  <li>{t("common:terms-condition-disclaimer-docs3")}</li>
-                  <li>{t("common:terms-condition-disclaimer-docs4")}</li>
+                  <li>{t("common:Terms-Condition-Disclaimer-Docs1")}</li>
+                  <li>{t("common:Terms-Condition-Disclaimer-Docs2")}</li>
+                  <li>{t("common:Terms-Condition-Disclaimer-Docs3")}</li>
+                  <li>{t("common:Terms-Condition-Disclaimer-Docs4")}</li>
                 </ul>
-                <p>{t("common:terms-condition-disclaimer-docs5")}</p>
+                <p>{t("common:Terms-Condition-Disclaimer-Docs5")}</p>
               </div>
             </div>
           </div>

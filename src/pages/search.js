@@ -46,15 +46,15 @@ const Search = ({ products, attributes }) => {
                     height={380}
                   />
                   <h2 className="text-lg md:text-xl lg:text-2xl xl:text-2xl text-center mt-2 font-medium font-serif text-gray-600">
-                    {t("common:sorryText")} 😞
+                    {t("common:Sorry-Text")} 😞
                   </h2>
                 </div>
               ) : (
                 <div className="flex justify-between my-3 bg-orange-100 border border-gray-100 rounded p-3">
                   <h6 className="text-sm font-serif">
-                    {t("common:totalI")}{" "}
+                    {t("common:Total")}
                     <span className="font-bold">{productData?.length}</span>{" "}
-                    {t("common:itemsFound")}
+                    {t("common:Items-Found")}
                   </h6>
                   <span className="text-sm font-serif">
                     <select
@@ -62,13 +62,13 @@ const Search = ({ products, attributes }) => {
                       className="py-0 text-sm font-serif font-medium block w-full rounded border-0 bg-white pr-10 cursor-pointer focus:ring-0"
                     >
                       <option className="px-3" value="All" defaultValue hidden>
-                        {t("common:sortByPrice")}
+                        {t("common:Sort-By-Price")}
                       </option>
                       <option className="px-3" value="Low">
-                        {t("common:lowToHigh")}
+                        {t("common:Low-To-High")}
                       </option>
                       <option className="px-3" value="High">
-                        {t("common:highToLow")}
+                        {t("common:High-To-Low")}
                       </option>
                     </select>
                   </span>
