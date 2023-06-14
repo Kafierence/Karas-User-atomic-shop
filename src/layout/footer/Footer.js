@@ -15,19 +15,19 @@ const Footer = () => {
   } = useContext(UserContext);
   const profileInfo = [
     {
-      label: t('common:ABOUT_US'),
+      label: t('common:About-Us'),
       link: "/about-us"
     },
     {
-      label: t('common:CONTACT_US'),
+      label: t('common:Contact-Us'),
       link: "/contact-us"
     },
     {
-      label: t('common:SIZE_GUIDE'),
+      label: t('common:Size-Guide'),
       link: "/side-guide"
     },
     {
-      label: t('common:PRIVACY_POLICY'),
+      label: t('common:Privacy-policy'),
       link: "/privacy"
     },
     {
@@ -37,11 +37,11 @@ const Footer = () => {
   ]
   const topCagories = [
     {
-      label: t("common:LAPTOP"),
+      label: t("common:Pet-Care"),
       link: "/search?Category=laptop",
     },
     {
-      label: t("common:TABLET"),
+      label: t("common:Beauty-$-Health"),
       link: "/search?Category=tablet",
     },
     {
@@ -49,7 +49,7 @@ const Footer = () => {
       link: "/search?Category=smart-devices",
     },
     {
-      label: t("common:CURVE"),
+      label: t("common:Curve"),
       link: "/search?Category=curve",
     }
   ]
@@ -57,19 +57,19 @@ const Footer = () => {
   const accountService = [
 
     {
-      label: t("common:DASHBOARD"),
+      label: t("common:Dashboard"),
       link: "/user/dashboard",
     },
     {
-      label: t("common:MY_ORDERS"),
+      label: t("common:My-Orders"),
       link: "/user/my-orders",
     },
     {
-      label: t("common:RECENT_ORDER"),
+      label: t("common:Recent-Orders"),
       link: "/search?Category=smart-devices",
     },
     {
-      label: t("common:UPDATE_PROFILE"),
+      label: t("common:Update-Profile"),
       link: "/user/update-profile",
     }
 
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
-              {t("common:footer-top-category")}
+              {t("common:Footer-Top-Category")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
               {topCagories.map(item => (
@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
-              {t("common:footer-my-account-title")}
+              {t("common:Footer-My-Account-Title")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
               {
@@ -116,7 +116,7 @@ const Footer = () => {
 
                     <LinkPrimary link={`${userInfo?.email ? item.link : "#"}`} title={item.label}>
                       <a className="text-gray-600 inline-block w-full hover:text-emerald-500">
-                        {t("common:footer-my-account-dashboard")}
+                        {t("common:Footer-My-Account-Dashboard")}
                       </a>
                     </LinkPrimary>
                   </li>
@@ -133,11 +133,11 @@ const Footer = () => {
               </a>
             </Link>
             <p className="leading-7 font-sans text-sm text-gray-600 mt-3">
-              <span>{t("common:ADDRESS_ADMIN")}</span>
+              <span>{t("common:Owner-Address")}</span>
               <br />
-              <span>{t("common:TELL_ADMIN")}</span>
+              <span>{t("common:Owner-Number")}</span>
               <br />
-              <span>{t("common:EMAIL_ADMIN")}</span>
+              <span>{t("common:Owner-EMail")}</span>
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-8 items-center justify-between">
             <div className="col-span-1">
               <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
-                {t("common:footer-follow-me")}
+                {t("common:Follow-Me")}
 
               </span>
               <LinkSocial />
