@@ -460,6 +460,9 @@ p:not(:last-of-type) {
   font-weight: 400;
   cursor: pointer;
 }
+.dropdown-content a:not(:last-child){
+  margin-top: 10px;
+}
 .dropdown-content a img {
   margin-right: 7px;
 }

@@ -56,11 +56,11 @@ const Order = ({ params }) => {
         <div className="max-w-screen-2xl mx-auto py-10 px-3 sm:px-6">
           <div className="bg-emerald-100 rounded-md mb-5 px-4 py-3">
             <label>
-              {t("common:thankyou")}{" "}
+              {t("common:Thank-You")}{" "}
               <span className="font-bold text-emerald-600">
                 {data?.user_info?.name},
               </span>{" "}
-              {t("common:orderReceivedMsg")}
+              {t("common:Order-Received-Msg")}
             </label>
           </div>
           <div className="bg-white rounded-lg shadow-sm">
@@ -87,7 +87,7 @@ const Order = ({ params }) => {
                       "Loading..."
                     ) : (
                       <button className="mb-3 sm:mb-0 md:mb-0 lg:mb-0 flex items-center justify-center bg-emerald-500  text-white transition-all font-serif text-sm font-semibold h-10 py-2 px-5 rounded-md">
-                        {t("common:downloadInvoice")}{" "}
+                        {t("common:Download-Invoice")}{" "}
                         <span className="ml-2 text-base">
                           <IoCloudDownloadOutline />
                         </span>
@@ -99,7 +99,7 @@ const Order = ({ params }) => {
                 <ReactToPrint
                   trigger={() => (
                     <button className="mb-3 sm:mb-0 md:mb-0 lg:mb-0 flex items-center justify-center bg-emerald-500  text-white transition-all font-serif text-sm font-semibold h-10 py-2 px-5 rounded-md">
-                      {t("common:printInvoice")}{" "}
+                      {t("common:Print-Invoice")}{" "}
                       <span className="ml-2">
                         <IoPrintOutline />
                       </span>

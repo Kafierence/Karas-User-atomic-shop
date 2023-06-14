@@ -32,7 +32,7 @@ module.exports = withPWA({
             "lh3.googleusercontent.com",
             "",
             "images.dashter.com",
-        ],
+        ],//Setting domain for each url can contact to website
     },
     webpack(config) {
         config.module.rules.push({

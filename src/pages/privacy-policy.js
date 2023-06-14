@@ -13,88 +13,88 @@ const PrivacyPolicy = () => {
         <div className="max-w-screen-2xl mx-auto lg:py-20 py-10 px-4 sm:px-10">
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-update-date")}
+              {t("common:Privacy-Policy-Update-Date")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-update-date-docs1")}</p>
-              <p>{t("common:privacy-policy-update-date-docs2")}</p>
+              <p>{t("common:Privacy-Policy-Update-Date-Docs1")}</p>
+              <p>{t("common:Privacy-Policy-Update-Date-Docs2")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-consent")}
+              {t("common:Privacy-Policy-Consent")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-consent-docs")}</p>
+              <p>{t("common:Privacy-Policy-Consent-Docs")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-information")}
+              {t("common:Privacy-Policy-Information")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-information-docs1")}</p>
-              <p>{t("common:privacy-policy-information-docs2")}</p>
+              <p>{t("common:Privacy-Policy-Information-Docs1")}</p>
+              <p>{t("common:Privacy-Policy-Information-Docs2")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-use-information")}
+              {t("common:Privacy-Policy-Use-Information")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-use-information-docs")}</p>
+              <p>{t("common:Privacy-Policy-Use-Information-Docs")}</p>
 
               <ol>
-                <li>{t("common:privacy-policy-use-information-docs1")}</li>
-                <li>{t("common:privacy-policy-use-information-docs2")}</li>
-                <li>{t("common:privacy-policy-use-information-docs3")}</li>
-                <li>{t("common:privacy-policy-use-information-docs4")}</li>
-                <li>{t("common:privacy-policy-use-information-docs5")}</li>
-                <li>{t("common:privacy-policy-use-information-docs6")}</li>
-                <li>{t("common:privacy-policy-use-information-docs7")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs1")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs2")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs3")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs4")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs5")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs6")}</li>
+                <li>{t("common:Privacy-Policy-Use-Information-Docs7")}</li>
               </ol>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-log-file")}
+              {t("common:Privacy-Policy-Log-File")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-log-file-docs")}</p>
+              <p>{t("common:Privacy-Policy-Log-File-Docs")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-advertising")}
+              {t("common:Privacy-Policy-Advertising")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-advertising-docs")}</p>
+              <p>{t("common:Privacy-Policy-Advertising-Docs")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-third-party")}
+              {t("common:Privacy-Policy-Third-Party")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-third-party-docs1")}</p>
-              <p>{t("common:privacy-policy-third-party-docs2")}</p>
+              <p>{t("common:Privacy-Policy-Third-Party-Docs1")}</p>
+              <p>{t("common:Privacy-Policy-Third-Party-Docs2")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-ccpa-rights")}
+              {t("common:Privacy-Policy-Ccpa-Rights")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-ccpa-rights-docs")}</p>
+              <p>{t("common:Privacy-Policy-Ccpa-Rights-Docs")}</p>
             </div>
           </div>
           <div className="mb-8 lg:mb-12 last:mb-0">
             <h2 className="text-xl xl:text-2xl xl:leading-7 font-semibold font-serif mb-2 lg:mb-4">
-              {t("common:privacy-policy-children-information")}
+              {t("common:Privacy-Policy-Children-Information")}
             </h2>
             <div className="font-sans leading-7">
-              <p>{t("common:privacy-policy-children-information-docs1")}</p>
-              <p>{t("common:privacy-policy-children-information-docs2")}</p>
+              <p>{t("common:Privacy-Policy-Children-Information-Docs1")}</p>
+              <p>{t("common:Privacy-Policy-Children-Information-Docs2")}</p>
             </div>
           </div>
         </div>

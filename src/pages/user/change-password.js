@@ -8,6 +8,7 @@ import Dashboard from "@pages/user/dashboard";
 import InputArea from "@component/form/InputArea";
 import CustomerServices from "@services/CustomerServices";
 import { notifyError, notifySuccess } from "@utils/toast";
+import useTranslation from "next-translate/useTranslation";
 
 const ChangePassword = () => {
   const {
@@ -17,7 +18,7 @@ const ChangePassword = () => {
     formState: { errors },
   } = useForm();
   const [loading, setLoading] = useState(false);
-
+  const { t } = useTranslation()
   const onSubmit = ({ email, currentPassword, newPassword }) => {
     // notifySuccess("This Feature is disabled for demo!");
     // return;
@@ -45,7 +46,7 @@ const ChangePassword = () => {
       title="Change-Password"
       description="This is change-password page"
     >
-      <h2 className="text-xl font-serif font-semibold mb-5">Change Password</h2>
+      <h2 className="text-xl font-serif font-semibold mb-5">{t("Change Password")}</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="md:grid-cols-6 md:gap-6">
           <div className="md:mt-0 md:col-span-2">
@@ -54,10 +55,10 @@ const ChangePassword = () => {
                 <div className="col-span-6 sm:col-span-6">
                   <InputArea
                     register={register}
-                    label="Email Address"
+                    label={t("Email Address")}
                     name="email"
                     type="email"
-                    placeholder="Your Email"
+                    placeholder={t("Your-Email")}
                   />
                   <Error errorName={errors.email} />
                 </div>

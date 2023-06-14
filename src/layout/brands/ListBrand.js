@@ -1,8 +1,6 @@
 import React, { useRef } from 'react'
 import {
-
     Flex,
-    Heading,
     HStack,
     Icon,
     Box,
@@ -62,7 +60,7 @@ const ListBrand = () => {
     return (
         <>
             <Flex justifyContent="space-between">
-                <Text textTransform="capitalize">{t('common:BRANDS')}</Text>
+                <Text textTransform="capitalize">{t('common:Brands')}</Text>
                 <HStack>
                     <Button ref={prevRef}>
                         <Icon

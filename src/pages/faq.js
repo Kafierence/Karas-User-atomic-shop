@@ -23,14 +23,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                      <span>{t("common:FAQ_QUESTION_1")}</span>
+                      <span>{t("common:Faq-Question1")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:FAQ_QUESTION_1_ANS")}
+                      {t("common:Faq-Question1-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -40,14 +40,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
-                      <span> {t("common:FAQ_QUESTION_2")}</span>
+                      <span> {t("common:Faq-Question2")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:FAQ_QUESTION_2_ANS")}
+                      {t("common:Faq-Question2-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -57,14 +57,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
-                      <span> {t("common:Faq-question3")}</span>
+                      <span> {t("common:Faq-Question3")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question3-ans")}
+                      {t("common:Faq-Question3-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -73,14 +73,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
-                      <span> {t("common:Faq-question4")}</span>
+                      <span> {t("common:Faq-Question4")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question4-ans")}
+                      {t("common:Faq-Question4-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -89,14 +89,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
-                      <span> {t("common:Faq-question5")}</span>
+                      <span> {t("common:Faq-Question5")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question5-ans")}
+                      {t("common:Faq-Question5-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -106,7 +106,7 @@ const Faq = () => {
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
                       <span>
-                        {t("common:Faq-question6")}
+                        {t("common:Faq-Question6")}
                       </span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
@@ -114,7 +114,7 @@ const Faq = () => {
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question6-ans")}
+                      {t("common:Faq-Question6-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -123,14 +123,14 @@ const Faq = () => {
                 {({ open }) => (
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                      <span> {t("common:Faq-question7")}</span>
+                      <span> {t("common:Faq-Question7")}</span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
                           } w-5 h-5 text-gray-500`}
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question7-ans")}
+                      {t("common:Faq-Question7-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}
@@ -141,7 +141,7 @@ const Faq = () => {
                   <>
                     <Disclosure.Button className="flex justify-between w-full px-4 py-3 text-base font-medium text-left text-gray-600 focus:text-emerald-500 bg-gray-50 hover:bg-emerald-50 rounded-lg focus:outline-none">
                       <span>
-                        {t("common:Faq-question8")}
+                        {t("common:Faq-Question8")}
                       </span>
                       <ChevronUpIcon
                         className={`${open ? 'transform rotate-180 text-emerald-500' : ''
@@ -149,7 +149,7 @@ const Faq = () => {
                       />
                     </Disclosure.Button>
                     <Disclosure.Panel className="px-4 pt-3 pb-8 text-sm leading-7 text-gray-500">
-                      {t("common:Faq-question8-ans")}
+                      {t("common:Faq-Question8-Ans")}
                     </Disclosure.Panel>
                   </>
                 )}

@@ -30,7 +30,7 @@ const Settinglanguage = () => {
     const { isOpen, onToggle, onClose } = useDisclosure();
     return (
         <>
-            <Box className="dropdown ">
+            <Box className="dropdown">
                 <Box
                     className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
                 ></Box>

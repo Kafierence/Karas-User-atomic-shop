@@ -63,10 +63,10 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-3">
                         <InputArea
                           register={register}
-                          label={t("common:firstName")}
+                          label={t("common:First-Name")}
                           name="firstName"
                           type="text"
-                          placeholder="John"
+                          placeholder="Karas"
                         />
                         <Error errorName={errors.firstName} />
                       </div>
@@ -74,10 +74,10 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-3">
                         <InputArea
                           register={register}
-                          label={t("common:lastName")}
+                          label={t("common:Last-Name")}
                           name="lastName"
                           type="text"
-                          placeholder="Doe"
+                          placeholder="Nam"
                         />
                         <Error errorName={errors.lastName} />
                       </div>
@@ -85,10 +85,10 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-3">
                         <InputArea
                           register={register}
-                          label={t("common:emailAddress")}
+                          label={t("common:Email-Address")}
                           name="email"
                           type="email"
-                          placeholder="youremail@gmail.com"
+                          placeholder={t("common:Owner-Email")}
                         />
                         <Error errorName={errors.email} />
                       </div>
@@ -96,10 +96,10 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-3">
                         <InputArea
                           register={register}
-                          label={t("common:phoneNumber")}
+                          label={t("common:Phone-Number")}
                           name="contact"
                           type="tel"
-                          placeholder="+062-6532956"
+                          placeholder="+84 09870***"
                         />
 
                         <Error errorName={errors.contact} />
@@ -109,17 +109,17 @@ const Checkout = () => {
 
                   <div className="form-group mt-12">
                     <h2 className="font-semibold font-serif text-base text-gray-700 pb-3">
-                      02. {t("common:shippingDetails")}
+                      02. {t("common:Shipping-Detail")}
                     </h2>
 
                     <div className="grid grid-cols-6 gap-6 mb-8">
                       <div className="col-span-6">
                         <InputArea
                           register={register}
-                          label={t("common:streetAddress")}
+                          label={t("common:Street-Address")}
                           name="address"
                           type="text"
-                          placeholder="123 Boulevard Rd, Beverley Hills"
+                          placeholder={t("common:Owner-Street-Address")}
                         />
                         <Error errorName={errors.address} />
                       </div>
@@ -127,10 +127,10 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-6 lg:col-span-2">
                         <InputArea
                           register={register}
-                          label={t("common:city")}
+                          label={t("common:City")}
                           name="city"
                           type="text"
-                          placeholder="Los Angeles"
+                          placeholder={t("common:Owner-City")}
                         />
                         <Error errorName={errors.city} />
                       </div>
@@ -141,7 +141,7 @@ const Checkout = () => {
                           label="Country"
                           name="country"
                           type="text"
-                          placeholder="United States"
+                          placeholder="Viet Nam"
                         />
                         <Error errorName={errors.country} />
                       </div>
@@ -149,7 +149,7 @@ const Checkout = () => {
                       <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                         <InputArea
                           register={register}
-                          label={t("common:zIPPostal")}
+                          label={t("common:Zip-Postal")}
                           name="zipCode"
                           type="text"
                           placeholder="2345"
@@ -188,11 +188,11 @@ const Checkout = () => {
 
                   <div className="form-group mt-12">
                     <h2 className="font-semibold font-serif text-base text-gray-700 pb-3">
-                      03. {t("common:paymentDetails")}
+                      03. {t("common:Payment-Method")}
                     </h2>
                     {showCard && (
                       <div className="mb-3">
-                        <CardElement />{" "}
+                        <CardElement />
                         <p className="text-red-400 text-sm mt-1">{error}</p>
                       </div>
                     )}
@@ -201,7 +201,7 @@ const Checkout = () => {
                         <InputPayment
                           setShowCard={setShowCard}
                           register={register}
-                          name={t("common:cashOnDelivery")}
+                          name={t("common:Cash-On-Delivery")}
                           value="Cash"
                           Icon={IoWalletSharp}
                         />
@@ -212,7 +212,7 @@ const Checkout = () => {
                         <InputPayment
                           setShowCard={setShowCard}
                           register={register}
-                          name={t("common:creditCard")}
+                          name={t("common:Credit-Card")}
                           value="Card"
                           Icon={ImCreditCard}
                         />
@@ -228,7 +228,7 @@ const Checkout = () => {
                           <span className="text-xl mr-2">
                             <IoReturnUpBackOutline />
                           </span>
-                          {t("common:continueShoppingBtn")}
+                          {t("common:Continue-Shopping")}
                         </a>
                       </Link>
                     </div>
@@ -240,22 +240,21 @@ const Checkout = () => {
                       >
                         {isCheckoutSubmit ? (
                           <span className="flex justify-center text-center">
-                            {" "}
                             <img
                               src="/loader/spinner.gif"
                               alt="Loading"
                               width={20}
                               height={10}
-                            />{" "}
+                            />
                             <span className="ml-2">
-                              {t("common:processing")}
+                              {t("common:Processing")}
                             </span>
                           </span>
                         ) : (
                           <span className="flex justify-center text-center">
-                            {t("common:confirmOrderBtn")}{" "}
+                            {t("common:Cofirm-Order")}
                             <span className="text-xl ml-2">
-                              {" "}
+
                               <IoArrowForward />
                             </span>
                           </span>
