@@ -192,7 +192,7 @@ const Checkout = () => {
                     </h2>
                     {showCard && (
                       <div className="mb-3">
-                        <CardElement />{" "}
+                        <CardElement />
                         <p className="text-red-400 text-sm mt-1">{error}</p>
                       </div>
                     )}
@@ -240,22 +240,21 @@ const Checkout = () => {
                       >
                         {isCheckoutSubmit ? (
                           <span className="flex justify-center text-center">
-                            {" "}
                             <img
                               src="/loader/spinner.gif"
                               alt="Loading"
                               width={20}
                               height={10}
-                            />{" "}
+                            />
                             <span className="ml-2">
-                              {t("common:processing")}
+                              {t("common:Processing")}
                             </span>
                           </span>
                         ) : (
                           <span className="flex justify-center text-center">
-                            {t("common:confirmOrderBtn")}{" "}
+                            {t("common:Cofirm-Order")}
                             <span className="text-xl ml-2">
-                              {" "}
+
                               <IoArrowForward />
                             </span>
                           </span>

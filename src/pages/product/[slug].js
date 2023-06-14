@@ -368,8 +368,8 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                                   className="read-or-hide"
                                 >
                                   {isReadMore
-                                    ? t("common:moreInfo")
-                                    : t("common:showLess")}
+                                    ? t("common:More-Info")
+                                    : t("common:Show-Less")}
                                 </span>
                               )
                               : product?.description?.en?.length > 230 && (
@@ -378,8 +378,8 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                                   className="read-or-hide"
                                 >
                                   {isReadMore
-                                    ? t("common:moreInfo")
-                                    : t("common:showLess")}
+                                    ? t("common:More-Info")
+                                    : t("common:Show-Less")}
                                 </span>
                               )}
                           </div>
@@ -413,7 +413,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                                 onClick={() => handleAddToCart(product)}
                                 className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none text-white px-4 ml-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 hover:text-white bg-emerald-500 hover:bg-emerald-600 w-full h-12"
                               >
-                                {t("common:addToCart")}
+                                {t("common:Add-To-Cart")}
                               </button>
                             </div>
                           </div>
@@ -421,7 +421,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                           <div className="flex flex-col mt-4">
                             <span className="font-serif font-semibold py-1 text-sm d-block">
                               <span className="text-gray-800">
-                                {t("common:category")}:
+                                {t("common:Category")}:
                               </span>{" "}
                               <Link
                                 href={`/search?category=${category_name}&_id=${product?.category?._id}`}
@@ -441,15 +441,15 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                           {/* social share */}
                           <div className="mt-8">
                             <h3 className="text-base font-semibold mb-1 font-serif">
-                              {t("common:shareYourSocial")}
+                              {t("common:Share-Your-Social")}
                             </h3>
                             <p className="font-sans text-sm text-gray-500">
-                              {t("common:shareYourSocialText")}
+                              {t("common:Share-Your-Social-Text")}
                             </p>
                             <ul className="flex mt-4">
                               <li className="flex items-center text-center border border-gray-100 rounded-full hover:bg-emerald-500  mr-2 transition ease-in-out duration-500">
                                 <FacebookShareButton
-                                  url={`https://supermarket-plum.vercel.app/product/${router.query.slug}`}
+                                  url={`https://karas-user-atomic-shop.vercel.app/product/${router.query.slug}`}
                                   quote=""
                                 >
                                   <FacebookIcon size={32} round />
@@ -457,7 +457,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                               </li>
                               <li className="flex items-center text-center border border-gray-100 rounded-full hover:bg-emerald-500  mr-2 transition ease-in-out duration-500">
                                 <TwitterShareButton
-                                  url={`https://supermarket-plum.vercel.app/product/${router.query.slug}`}
+                                  url={`https://karas-user-atomic-shop.vercel.app/product/${router.query.slug}`}
                                   quote=""
                                 >
                                   <TwitterIcon size={32} round />
@@ -465,7 +465,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                               </li>
                               <li className="flex items-center text-center border border-gray-100 rounded-full hover:bg-emerald-500  mr-2 transition ease-in-out duration-500">
                                 <RedditShareButton
-                                  url={`https://supermarket-plum.vercel.app/product/${router.query.slug}`}
+                                  url={`https://karas-user-atomic-shop.vercel.app/product/${router.query.slug}`}
                                   quote=""
                                 >
                                   <RedditIcon size={32} round />
@@ -473,7 +473,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                               </li>
                               <li className="flex items-center text-center border border-gray-100 rounded-full hover:bg-emerald-500  mr-2 transition ease-in-out duration-500">
                                 <WhatsappShareButton
-                                  url={`https://supermarket-plum.vercel.app/product/${router.query.slug}`}
+                                  url={`https://karas-user-atomic-shop.vercel.app/product/${router.query.slug}`}
                                   quote=""
                                 >
                                   <WhatsappIcon size={32} round />
@@ -481,7 +481,7 @@ const ProductScreen = ({ product, attributes, relatedProduct }) => {
                               </li>
                               <li className="flex items-center text-center border border-gray-100 rounded-full hover:bg-emerald-500  mr-2 transition ease-in-out duration-500">
                                 <LinkedinShareButton
-                                  url={`https://supermarket-plum.vercel.app/product/${router.query.slug}`}
+                                  url={`https://karas-user-atomic-shop.vercel.app/product/${router.query.slug}`}
                                   quote=""
                                 >
                                   <LinkedinIcon size={32} round />
