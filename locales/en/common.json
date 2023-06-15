@@ -149,6 +149,7 @@
   "Fish-Meat": "Fish & Meat",
   "Soft-Drinks": "Soft Drinks",
   "Baby-Care": "Baby Care",
+  
   "Beauty-Health": " Beauty & Health",
 
   "Follow-Me": "Follow Me",
@@ -232,6 +233,7 @@
   "Privacy-Policy-Children-Information-Docs2": "Karas does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.",
 
   "/=================* terms and condition* =================/": "",
+  "Terms-Conditions":"Terms & Condition",
   "Terms-Condition-Welcome": "Welcome to Grocecy Store (Karas)!",
   "Terms-Condition-Welcome-Docs1": "These terms and conditions outline the rules and regulations for the use of Karas's Website, located at https://Karas.com/. By accessing this website we assume you accept these terms and conditions. Do not continue to use Karas if you do not agree to take all of the terms and conditions stated on this page.  ",
   "Terms-Condition-Welcome-Docs2": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: Client, You and Your refers to you, the person log on this website and compliant to the Company’s terms and conditions. The Company, refers to our CompanyPartParties or Us refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.",
@@ -331,6 +333,7 @@
   "In-Stock": "In Stock",
   "Add-To-Cart": "Add to Cart",
   "Category": "Category",
+  "Categories":"Categories",
   "Share-Your-Social": "Share your social network",
   "Share-Your-Social-Text": "For get lots of traffic from social network share this product",
   "Related-Products": "Related Products",
@@ -344,9 +347,9 @@
 
   "/=================*SEARCH*=================/": "",
   "Search-Placeholder":"Search for products (e.g. fish, apple, oil)",
-  "Top-Search": "Search for product (e.g. fish, apple, oil)"
-
- 
+  "Top-Search": "Search for product (e.g. fish, apple, oil)",
+  "Brands":"Brands"
+  
 
   
 

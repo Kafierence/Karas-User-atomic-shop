@@ -57,12 +57,12 @@ const NavbarPromo = () => {
 
                     <Link href="/about-us">
                       <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">
-                        {t("common:About Us")}
+                        {t("common:About-Us")}
                       </a>
                     </Link>
                     <Link href="/contact-us">
                       <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">
-                        {t("common:Contact Us")}
+                        {t("common:Contact-Us")}
                       </a>
                     </Link>
                     <Link href="/faq">
@@ -131,12 +131,12 @@ const NavbarPromo = () => {
 
             <Link href="/privacy-policy">
               <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">
-                {t("common:Privacy Policy")}
+                {t("common:Privacy-Policy")}
               </a>
             </Link>
             <Link href="/terms-and-conditions">
               <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600">
-                {t("common:Terms & Conditions")}
+                {t("common:Terms-Conditions")}
               </a>
             </Link>
           </div>

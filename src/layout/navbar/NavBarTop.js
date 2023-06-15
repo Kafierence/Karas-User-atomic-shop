@@ -46,7 +46,7 @@ const NavBarTop = () => {
           <div className="text-gray-700 py-2 font-sans text-xs font-medium border-b flex justify-between items-center">
             <span className="flex items-center">
               <FiPhoneCall className="mr-2" />
-              {t("common:Call Us")}
+              {t("common:Call-Us")}
               <a
                 href="tel:+012345609"
                 className="font-bold text-emerald-500 ml-1"
@@ -68,14 +68,14 @@ const NavBarTop = () => {
               <Link href="/about-us">
                 <a className="font-medium hover:text-emerald-600">
 
-                  {t("common:About Us")}
+                  {t("common:About-Us")}
                 </a>
               </Link>
               <span className="mx-2">|</span>
               <Link href="/contact-us">
                 <a className="font-medium hover:text-emerald-600">
 
-                  {t("common:Contact Us")}
+                  {t("common:Contact-Us")}
                 </a>
               </Link>
 
@@ -92,7 +92,7 @@ const NavBarTop = () => {
                     <span className="mr-1">
                       <FiUser />
                     </span>
-                    Logout
+                    {t("common:Logout")}
                   </button>
                 </>
               ) : (

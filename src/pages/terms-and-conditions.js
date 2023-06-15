@@ -65,7 +65,7 @@ const TermAndConditions = () => {
                   {t("common:Terms-Condition-Privacy-Docs1")}
                   <Link href="/privacy-policy">
                     <a className="text-emerald-500"> {t("common:Terms-Condition-Privacy-Docs2")}</a>
-                  </Link>{" "}
+                  </Link>
                 </p>
               </div>
             </div>

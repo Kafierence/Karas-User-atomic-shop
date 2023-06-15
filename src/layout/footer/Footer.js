@@ -37,20 +37,20 @@ const Footer = () => {
   ]
   const topCagories = [
     {
-      label: t("common:Pet-Care"),
-      link: "/search?Category=laptop",
+      label: t("common:Fish-Meat"),
+      link: "/search?category=pet-care",
     },
     {
-      label: t("common:Beauty-$-Health"),
-      link: "/search?Category=tablet",
+      label: t("common:Beauty-Health"),
+      link: "/search?category=beaty-health",
     },
     {
-      label: t("common:SMART_DEVICES"),
-      link: "/search?Category=smart-devices",
+      label: t("common:Soft-Drinks"),
+      link: "/search?category=smart-devices",
     },
     {
-      label: t("common:Curve"),
-      link: "/search?Category=curve",
+      label: t("common:Baby-Care"),
+      link: "/search?category=curve",
     }
   ]
 
@@ -66,7 +66,7 @@ const Footer = () => {
     },
     {
       label: t("common:Recent-Orders"),
-      link: "/search?Category=smart-devices",
+      link: "/",
     },
     {
       label: t("common:Update-Profile"),
