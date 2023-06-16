@@ -41,10 +41,10 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
             <InputArea
               register={register}
               defaultValue="123456789"
-              label="Password"
+              label={t("common:Password")}
               name="password"
               type="password"
-              placeholder="Password"
+              placeholder={t("common:Password")}
               Icon={FiLock}
             />
 
@@ -58,7 +58,7 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
                 onClick={() => setShowResetPassword(true)}
                 className="text-end text-sm text-heading ps-3 underline hover:no-underline focus:outline-none"
               >
-                Forgot password?
+                {t("common:Forgot-Password")}?
               </button>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
                 width={20}
                 height={10}
               />
-              <span className="font-serif ml-2 font-light">Processing</span>
+              <span className="font-serif ml-2 font-light">{t("common:Processing")}</span>
             </button>
           ) : (
             <button
