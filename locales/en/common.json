@@ -42,6 +42,7 @@
     "Create-Account":"Create an account",
     "Login":"Login",
     "Login-Box-Text":"Login with your email and password",
+    "Login-Success":"Login Success!",
     "Forgot-Password":"Forgot Password",
     "Not-Account":"Not have a account ?",
     "Register":"Register",
@@ -54,6 +55,7 @@
     "My-Orders": "My Orders",
     "Update-Profile": "Update Profile",
     "Change-Password": "Change Password",
+    "Reset-Password":"Reset Your Password",
     
 
     "No-Order": "You Have no order Yet!",
@@ -146,6 +148,7 @@
 
   "Customer-Services": "Customer Services",
   "Top-Category": "Top Category",
+  " All-Categories":"All Categories",
   "Fish-Meat": "Fish & Meat",
   "Soft-Drinks": "Soft Drinks",
   "Baby-Care": "Baby Care",
@@ -190,7 +193,6 @@
   "Quantity": "Quantity",
   "Item-Price": "Item Price",
   "Amount": "Amount",
-  "Payment-Method": " Payment Method",
 
   "Total-Amount": "Total Amount",
   "Download-Invoice": "Download Invoice",
@@ -300,10 +302,13 @@
   "Feature-Promo4-Sub-Title": "Upto 20% Off",
   "/=================*SHOP - PAYMENT- Order*=================/": "",
   "Payment-Method": "Payment Method",
+  "Payment-Required":"Payment Method is required!",
   "Cash-On-Delivery": "Cash On Delivery",
+  "Delivery":"Delivery",
   "Credit-Card": "Credit Card",
   "PayPal": "PayPal",
-
+  "Cost":"Cost",
+  "Shipping-Required":"Shipping Option is required!",
   
   "Confirm-Order": "Confirm Order",
   "Processing": "Processing",
@@ -348,9 +353,12 @@
   "/=================*SEARCH*=================/": "",
   "Search-Placeholder":"Search for products (e.g. fish, apple, oil)",
   "Top-Search": "Search for product (e.g. fish, apple, oil)",
-  "Brands":"Brands"
-  
-
+  "Brands":"Brands",
+  "Drag-Image-Here":"Drag your image here",
+  "Image-Type-Accept":"Only *.jpeg and *.png images will be accepted",
+  "Inactive":"Inactive",
+  "Active":"Active",
+  "This-Coupon-apply-more":"* This coupon apply when shopping more then"
   
 
 

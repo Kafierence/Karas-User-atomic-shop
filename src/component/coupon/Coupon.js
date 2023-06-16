@@ -11,7 +11,7 @@ import { showingTranslateValue } from "@utils/translate";
 import SettingServices from "@services/SettingServices";
 
 const Coupon = ({ couponInHome }) => {
-  const { lang } = useTranslation("ns1");
+  const { lang, t } = useTranslation("ns1");
   const [copiedCode, setCopiedCode] = useState("");
   const [copied, setCopied] = useState(false);
 
@@ -57,17 +57,17 @@ const Coupon = ({ couponInHome }) => {
                       ) : (
                         <span>{coupon?.discountType?.value}%</span>
                       )}
-                    </span>{" "}
-                    Off
+                    </span>
+                    {t("common:Off")}
                   </h6>
                   <div className="ml-2">
                     {dayjs().isAfter(dayjs(coupon.endTime)) ? (
                       <span className="text-red-600 inline-block px-4 py-1 rounded-full font-medium text-xs bg-red-100">
-                        Inactive
+                        {t("common:Inactive")}
                       </span>
                     ) : (
                       <span className="text-emerald-600 inline-block px-4 py-1 rounded-full font-medium text-xs bg-emerald-100">
-                        Active
+                        {t("common:Active")}
                       </span>
                     )}
                   </div>
@@ -131,11 +131,11 @@ const Coupon = ({ couponInHome }) => {
                     </div>
                   </div>
                   <p className="text-xs leading-4 text-gray-500 mt-2">
-                    * This coupon apply when shopping more then{" "}
+                    {t("common:This-Coupon-apply-more")}
                     <span className="font-bold">
                       {currency}
                       {coupon.minimumAmount}
-                    </span>{" "}
+                    </span>
                   </p>
                 </div>
               </div>

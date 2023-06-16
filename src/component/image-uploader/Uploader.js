@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDropzone } from 'react-dropzone';
 import { FiUploadCloud } from 'react-icons/fi';
+import useTranslation from 'next-translate/useTranslation';
 
 const Uploader = ({ setImageUrl, imageUrl }) => {
   const [files, setFiles] = useState([]);
   const uploadUrl = process.env.NEXT_PUBLIC_CLOUDINARY_URL;
   const upload_Preset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
-
+  const { t } = useTranslation()
   const { getRootProps, getInputProps } = useDropzone({
     accept: 'image/*',
     multiple: false,
@@ -78,9 +79,9 @@ const Uploader = ({ setImageUrl, imageUrl }) => {
         <span className="mx-auto flex justify-center">
           <FiUploadCloud className="text-3xl text-emerald-500" />
         </span>
-        <p className="text-sm mt-2">Drag your image here</p>
+        <p className="text-sm mt-2">{t("common:Drag-Image-Here")}</p>
         <em className="text-xs text-gray-400">
-          (Only *.jpeg and *.png images will be accepted)
+          ({t("common:Image-Type-Accept")})
         </em>
       </div>
       <aside className="flex flex-row flex-wrap mt-4">

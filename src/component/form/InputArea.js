@@ -1,5 +1,6 @@
 import React from 'react';
 import Label from '@component/form/Label';
+import useTranslation from 'next-translate/useTranslation';
 
 const InputArea = ({
   register,
@@ -10,14 +11,15 @@ const InputArea = ({
   placeholder,
   Icon,
 }) => {
+  const { t } = useTranslation();
   return (
     <>
-      <Label label={label} />
+      <Label label={t(label)} />
       <div className="relative">
         {Icon && (
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <span className="text-gray-800 focus-within:text-gray-900 sm:text-base">
-              <Icon />{' '}
+              <Icon />
             </span>
           </div>
         )}
@@ -27,7 +29,7 @@ const InputArea = ({
           })}
           defaultValue={defaultValue}
           type={type}
-          placeholder={placeholder}
+          placeholder={t(placeholder)}
           name={name}
           className={
             Icon

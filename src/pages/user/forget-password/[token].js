@@ -11,8 +11,10 @@ import InputArea from "@component/form/InputArea";
 import CustomerServices from "@services/CustomerServices";
 import { UserContext } from "@context/UserContext";
 import { notifyError, notifySuccess } from "@utils/toast";
+import useTranslation from "next-translate/useTranslation";
 
 const ForgetPassword = () => {
+  const { t } = useTranslation()
   const [loading, setLoading] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const { dispatch } = useContext(UserContext);
@@ -57,7 +59,7 @@ const ForgetPassword = () => {
         .then((res) => {
           setLoading(false);
           router.push("/");
-          notifySuccess("Login Success!");
+          notifySuccess(t("Login-Success"));
           dispatch({ type: "USER_LOGIN", payload: res });
           Cookies.set("userInfo", JSON.stringify(res));
         })
@@ -75,12 +77,12 @@ const ForgetPassword = () => {
         <div className="bg-white rounded-lg shadow max-w-md w-full space-y-8 py-12 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold font-serif">
-              {showLogin ? "Login" : "Forget Password"}
+              {showLogin ? t("common:Login") : t("common:Forget-Password")}
             </h2>
             <p className="text-sm md:text-base text-gray-500 mt-2 mb-8 sm:mb-10">
               {showLogin
-                ? "Login with your email and new password"
-                : "Reset Your Password"}
+                ? t("common:Login-Box-Text")
+                : t("common:Reset-Password")}
             </p>
           </div>
           <form
