@@ -96,22 +96,22 @@ const userSidebar = [
 const sliderData = [
   {
     id: 1,
-    title: 'Slider1Title',
-    info: 'Slider1description',
+    title: 'Slider1-Title',
+    info: 'Slider1-Description',
     url: '/search?Category=biscuits--cakes',
     image: '/slider/slider-1.jpg',
   },
   {
     id: 2,
-    title: 'Slider2Title',
-    info: 'Slider2description',
+    title: 'Slider2-Title',
+    info: 'Slider2-Description',
     url: '/search?Category=fish--meat',
     image: '/slider/slider-2.jpg',
   },
   {
     id: 3,
-    title: 'Slider3Title',
-    info: 'Slider3description',
+    title: 'Slider-3-Title',
+    info: 'Slider-3-Description',
     url: '/search?category=fresh-vegetable',
     image: '/slider/slider-3.jpg',
   },
@@ -141,7 +141,7 @@ const ctaCardData = [
   },
 ];
 
-const featurePromo = [
+/* const featurePromo = [
   {
     id: 1,
     title: 'featurePromo1-title',
@@ -167,7 +167,7 @@ const featurePromo = [
     icon: FiGift,
   },
 ];
-
+ */
 const contactData = [
   {
     id: 1,
@@ -200,6 +200,6 @@ export {
   userSidebar,
   sliderData,
   ctaCardData,
-  featurePromo,
+
   contactData,
 };

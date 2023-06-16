@@ -23,7 +23,7 @@ const StickyCart = () => {
             <IoBagHandleOutline />
           </span>
           <span className="px-2 text-sm font-serif font-medium">
-            {totalItems} Items
+            {totalItems} {t("common:Items")}
           </span>
         </div>
         <div className="flex flex-col items-center justify-center bg-emerald-700 p-2 text-white text-base font-serif font-medium rounded-bl-lg mx-auto">
