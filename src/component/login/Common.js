@@ -7,13 +7,14 @@ import Register from "@component/login/Register";
 import ResetPassword from "@component/login/ResetPassword";
 import useLoginSubmit from "@hooks/useLoginSubmit";
 import { notifyError } from "@utils/toast";
+import useTranslation from "next-translate/useTranslation";
 
 const Common = ({ setModalOpen }) => {
   const [showRegister, setShowRegister] = useState(false);
   const [showResetPassword, setShowResetPassword] = useState(false);
 
   const { handleGoogleSignIn, GoogleLogin } = useLoginSubmit(setModalOpen);
-
+  const { t } = useTranslation()
   const handleModal = () => {
     setShowRegister(!showRegister);
     setShowResetPassword(false);
@@ -45,7 +46,7 @@ const Common = ({ setModalOpen }) => {
 
         <div className="flex justify-between flex-col lg:flex-row">
           <button className="text-sm inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center rounded-md focus:outline-none text-gray-600 bg-gray-100 shadow-sm md:px-2 my-1 sm:my-1 md:my-1 lg:my-0 lg:px-3 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-blue-600 h-11 md:h-12 w-full mr-2">
-            <ImFacebook /> <span className="ml-2">Login With Facebook</span>
+            <ImFacebook /> <span className="ml-2">{t("Login-With-Facebook")}</span>
           </button>
 
           <GoogleLogin
@@ -56,7 +57,7 @@ const Common = ({ setModalOpen }) => {
                 onClick={renderProps.onClick}
                 disabled={renderProps.disabled}
               >
-                <ImGoogle /> <span className="ml-2">Login With Google</span>
+                <ImGoogle /> <span className="ml-2">{t("Login-With-Google")}</span>
               </button>
             )}
             onSuccess={handleGoogleSignIn}

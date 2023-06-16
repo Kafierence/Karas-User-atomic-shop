@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   const { t } = useTranslation();
   return (
     <Layout title="Privacy Policy" description="This is privacy policy page">
-      <PageHeader title="privacy-policy-page" />
+      <PageHeader title="Privacy-Policy" />
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-20 py-10 px-4 sm:px-10">
           <div className="mb-8 lg:mb-12 last:mb-0">

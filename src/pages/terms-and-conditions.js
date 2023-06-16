@@ -74,7 +74,7 @@ const TermAndConditions = () => {
                 {t("common:Terms-Condition-Rights")}
               </h2>
               <div className="font-sans leading-7">
-                <p>{t("common:Terms-Condition-rights-Docs")}</p>
+                <p>{t("common:Terms-Condition-Rights-Docs")}</p>
               </div>
             </div>
             <div className="my-6 lg:my-8 last:mb-0">

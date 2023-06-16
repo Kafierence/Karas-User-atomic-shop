@@ -4,8 +4,11 @@ import { FiLock, FiMail } from "react-icons/fi";
 import Error from "@component/form/Error";
 import useLoginSubmit from "@hooks/useLoginSubmit";
 import InputArea from "@component/form/InputArea";
+import useTranslation from "next-translate/useTranslation";
 
 const Login = ({ setShowResetPassword, setModalOpen }) => {
+
+  const { t } = useTranslation();
   const { handleSubmit, submitHandler, register, errors, loading } =
     useLoginSubmit(setModalOpen);
 
@@ -25,7 +28,7 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
           <div className="form-group">
             <InputArea
               register={register}
-              defaultValue="justin@gmail.com"
+              defaultValue="binnam0147@gmail.com"
               label="Email"
               name="registerEmail"
               type="email"
@@ -37,7 +40,7 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
           <div className="form-group">
             <InputArea
               register={register}
-              defaultValue="12345678"
+              defaultValue="123456789"
               label="Password"
               name="password"
               type="password"
@@ -79,7 +82,7 @@ const Login = ({ setShowResetPassword, setModalOpen }) => {
               type="submit"
               className="w-full text-center py-3 rounded bg-emerald-500 text-white hover:bg-emerald-600 transition-all focus:outline-none my-1"
             >
-              Login
+              {t("Login")}
             </button>
           )}
         </div>
