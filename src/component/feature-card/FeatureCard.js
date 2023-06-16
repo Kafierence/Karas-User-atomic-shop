@@ -8,26 +8,26 @@ const FeatureCard = () => {
   const featurePromo = [
     {
       id: 1,
-      title: 'FeaturePromo1-Title',
-      info: 'Feature-Promo1-Info',
+      title: 'Feature-Promo1-Title',
+      info: 'Feature-Promo1-Sub-Title',
       icon: FiTruck,
     },
     {
       id: 2,
       title: 'Feature-Promo2-Title',
-      info: 'Feature-Promo2-Info',
+      info: 'Feature-Promo2-Sub-Title',
       icon: FiPhoneCall,
     },
     {
       id: 3,
       title: 'Feature-Promo3-Title',
-      info: 'Feature-Promo3-Info',
+      info: 'Feature-Promo3-Sub-Title',
       icon: FiCreditCard,
     },
     {
       id: 4,
       title: 'Feature-Promo4-Title',
-      info: 'Feature-Promo4-Info',
+      info: 'Feature-Promo4-Sub-Title',
       icon: FiGift,
     },
   ];
