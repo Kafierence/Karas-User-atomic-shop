@@ -26,7 +26,7 @@ const ContactUs = () => {
   };
 
   return (
-    <Layout title="Contact-Us" description="This is contact us page">
+    <Layout title={t("common:Contact-Us")} description="This is contact us page">
       <PageHeader title="Contact-Us" />
 
       <div className="bg-white">

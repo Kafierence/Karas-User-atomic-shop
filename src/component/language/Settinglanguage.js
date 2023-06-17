@@ -48,11 +48,10 @@ const Settinglanguage = () => {
                                     as={NextLink}
                                     key={language.iso_code}
                                     href="/"
-                                    cursor="pointer"
                                     locale={`${language.iso_code}`}
                                 >
 
-                                    <Box onClick={() => setCurrentLang(language)}>
+                                    <Box _hover={{ color: 'red' }} cursor="pointer" py={2} onClick={() => setCurrentLang(language)}>
                                         <Box
                                             className={`flot-l flag ${language?.flag?.toLowerCase()}`} />
 

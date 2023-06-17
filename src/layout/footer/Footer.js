@@ -130,7 +130,7 @@ const Footer = () => {
               <br />
               <span>{t("common:Owner-Number")}</span>
               <br />
-              <span>{t("common:Owner-EMail")}</span>
+              <span>{t("common:Owner-Email")}</span>
             </p>
           </div>
         </div>

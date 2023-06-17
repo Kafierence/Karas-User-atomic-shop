@@ -19,7 +19,7 @@ const Layout = ({ title, description, children }) => {
         <Head>
           <title>
             {title
-              ? `Grocery Store| ${title}`
+              ? `Grocery Store | ${title} Page`
               : "Grocery Store - Developed by Karas"}
           </title>
           {description && <meta name="description" content={description} />}

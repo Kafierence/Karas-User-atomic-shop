@@ -51,7 +51,7 @@ const NavBarTop = () => {
                 href="tel:+012345609"
                 className="font-bold text-emerald-500 ml-1"
               >
-                +0987011701
+                {t("common:Owner-Number")}
               </a>
 
             </span>

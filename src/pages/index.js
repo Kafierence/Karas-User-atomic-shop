@@ -5,8 +5,7 @@ import useTranslation from "next-translate/useTranslation";
 
 //internal import
 import Layout from "@layout/Layout";
-import Banner from "@component/banner/Banner";
-import CardTwo from "@component/cta-card/CardTwo";
+
 import OfferCard from "@component/offer/OfferCard";
 import StickyCart from "@component/cart/StickyCart";
 import ProductServices from "@services/ProductServices";
@@ -16,7 +15,7 @@ import FeatureCategory from "@component/category/FeatureCategory";
 import Loading from "@component/preloader/Loading";
 import AttributeServices from "@services/AttributeServices";
 import FooterTop from "@layout/footer/FooterTop";
-import ProductSaleCard from "@component/product/ProductSaleCard";
+
 
 
 const Home = ({ popularProducts, discountProducts, attributes }) => {
@@ -53,9 +52,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                     <OfferCard />
                   </div>
                 </div>
-                <div className="bg-orange-100 px-10 py-6 rounded-lg mt-6 hidden lg:block">
-                  <Banner />
-                </div>
+
               </div>
             </div>
 
@@ -103,14 +100,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             </div>
 
-            {/* promotional banner card */}
-            <div className="block mx-auto max-w-screen-2xl">
-              <div className="mx-auto max-w-screen-2xl px-4 sm:px-10">
-                <div className="lg:p-16 p-6 bg-emerald-500 shadow-sm border rounded-lg">
-                  <CardTwo />
-                </div>
-              </div>
-            </div>
+
 
             {/* discounted products */}
             <div
