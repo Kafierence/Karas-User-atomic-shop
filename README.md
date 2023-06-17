@@ -1,10 +1,10 @@
 #Document Build Grocery Shop  Karas(Dev From Casperstats)
 
 # Translate Multiple Language
-## Rule Write[rule-write]: 
+## [rule-write]Rule Write: 
     * Uppercase World First Character at each word
     * Seperate Word in each sentence by - 
-## Structure Translate[structure-translate]:
+## [structure-translate]Structure Translate:
     ** Seperate translate file to **:
     * Author file include: Author , Account , Page
     * SHOP file include: Shop, Payment, Search

@@ -9,6 +9,7 @@ import MobileFooter from "@layout/footer/MobileFooter";
 import FeatureCard from "@component/feature-card/FeatureCard";
 import NavBarTop from "./navbar/NavBarTop";
 import TopProgressBar from "@component/progress/TopProgressBar";
+import LinkPrimary from "@component/variants/LinkPrimary";
 
 const Layout = ({ title, description, children }) => {
   return (
@@ -26,10 +27,11 @@ const Layout = ({ title, description, children }) => {
           <link ref="icon" href="/favicon.png" />
         </Head>
         <NavBarTop />
+
         <Navbar />
         <div className="bg-gray-50">{children}</div>
         <MobileFooter />
-        <div className="w-full">
+        <div className="w-full">   <LinkPrimary link={'#'} title={'test'} />
           <div className="hidden my-3 relative lg:block mx-auto max-w-screen-2xl py-6 px-3 sm:px-10">
             <FeatureCard />
           </div>
