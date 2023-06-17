@@ -26,7 +26,7 @@ const ContactUs = () => {
   };
 
   return (
-    <Layout title="Contact Us" description="This is contact us page">
+    <Layout title="Contact-Us" description="This is contact us page">
       <PageHeader title="Contact-Us" />
 
       <div className="bg-white">
@@ -85,7 +85,7 @@ const ContactUs = () => {
                         label={t("common:Contact-Page-Form-Input-Name")}
                         name="name"
                         type="text"
-                        placeholder={t("common:Contact-Page-Form-Plaholder-Name")}
+                        placeholder={t("common:Contact-Page-Form-Placholder-Name")}
                       />
                       <Error errorName={errors.name} />
                     </div>
@@ -95,7 +95,7 @@ const ContactUs = () => {
                         label={t("common:Contact-Page-Form-Input-Email")}
                         name="email"
                         type="email"
-                        placeholder={t("common:Contact-Page-Form-Plaholder-Email")}
+                        placeholder={t("common:Contact-Page-Form-Placeholder-Name")}
                       />
                       <Error errorName={errors.email} />
                     </div>
@@ -106,7 +106,7 @@ const ContactUs = () => {
                       label={t("common:Contact-Page-Form-Input-Subject")}
                       name="subject"
                       type="text"
-                      placeholder={t("common:Contact-Page-Form-Plaholder-Subject")}
+                      placeholder={t("common:Contact-Page-Form-Placeholder-Subject")}
                     />
                     <Error errorName={errors.subject} />
                   </div>
@@ -121,7 +121,7 @@ const ContactUs = () => {
                       autoComplete="off"
                       spellCheck="false"
                       rows="4"
-                      placeholder={t("common:Contact-Page-Form-Plaholder-Message")}
+                      placeholder={t("common:Contact-Page-Form-Placeholder-Message")}
                     ></textarea>
                     <Error errorName={errors.message} />
                   </div>
@@ -130,7 +130,7 @@ const ContactUs = () => {
                       data-variant="flat"
                       className="md:text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center border-0 border-transparent rounded-md placeholder-white focus-visible:outline-none focus:outline-none bg-emerald-500 text-white px-5 md:px-6 lg:px-8 py-3 md:py-3.5 lg:py-3 hover:text-white hover:bg-emerald-600 h-12 mt-1 text-sm lg:text-base w-full sm:w-auto"
                     >
-                      {t("common:Contact-Page-Form-Send")}
+                      {t("common:Send")}
                     </button>
                   </div>
                 </div>

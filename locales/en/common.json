@@ -62,6 +62,7 @@
     
 
     "No-Order": "You Have no order Yet!",
+    "Recent-Orders":"Recent Orders",
 
     "/=================*PAGE*=================/": "",
     "Offer": "Offer",
@@ -134,11 +135,11 @@
   "Slider1-Title": "The Best Quality Products Guaranteed!",
   "Slider1-Description": "Dramatically facilitate effective total linkage for go forward processes...",
 
-  "Slider-2-Title": "Best Different Type of Grocery Store",
-  "Slider-2-Descriptio": "Quickly aggregate empowered networks after emerging products...",
+  "Slider2-Title": "Best Different Type of Grocery Store",
+  "Slider2-Descriptio": "Quickly aggregate empowered networks after emerging products...",
 
-  "Slider-3-Title": "Quality Freshness Guaranteed!",
-  "Slider-3-Description": "Intrinsicly fashion performance based products rather than accurate benefits...",
+  "Slider3-Title": "Quality Freshness Guaranteed!",
+  "Slider3-Description": "Intrinsicly fashion performance based products rather than accurate benefits...",
 
   "/=================*Offer Card*=================/": "",
   "Mega-Offer": "Mega Offer",
@@ -160,30 +161,30 @@
   "Beauty-Health": " Beauty & Health",
 
   "Follow-Me": "Follow Me",
-  "Call-Us": "Call Us Today!",
+  "Call-Us": "Call Us Today :",
 
   "/=================* Contact Us* =================/": "",
 
   "Email-Us":"Email Us",
   "Contact-Page-Box1-Info": "Interactively grow empowered for process-centric total linkage.",
 
-  "Contact-Page-Box2-Title": "call Us",
+  "Contact-Page-Box2-Title": "Call Us",
   "Contact-Page-Box2-Info": "Distinctively disseminate focused solutions clicks-and-mortar ministate.",
 
   "Contact-Page-Box3-Title": "Location",
-  "Contact-Page-Box3-Title-Info": "Cecilia Chapman, 561-4535 Nulla LA, United States 96522",
+  "Contact-Page-Box3-Title-Info": "GMT HCM City , Viet Nam",
 
   "Contact-Page-Form-Title": "For any suppoort just send your query",
   "Contact-Page-Form-Description": "Collaboratively promote client-focused convergence vis-a-vis customer directed alignments via plagiarize strategic users and standardized infrastructures.",
 
   "Contact-Page-Form-Input-Name": "Your Name",
-  "Contact-Page-Form-Placholder-Name": "Enter Your Name",
+  "Contact-Page-Form-Placeholder-Name": "Enter Your Name",
   "Contact-Page-Form-Input-Email": "Your Email",
-  "Contact-Page-Form-Placholder-Email": "Enter Your Email",
+  "Contact-Page-Form-Placeholder-Email": "Enter Your Email",
   "Contact-Page-Form-Input-Subject": "Subject",
-  "Contact-Page-Form-Placholder-Subject": "Enter Your Subject",
+  "Contact-Page-Form-Placeholder-Subject": "Enter Your Subject",
   "Contact-Page-Form-Input-Message": "Message",
-  "Contact-Page-Form-Placholder-Message": "Write your message here",
+  "Contact-Page-Form-Placeholder-Message": "Write your message here",
   "Contact-Page-Form-send": "Send Message",
 
   "/=================* Invoice * =================/": "",

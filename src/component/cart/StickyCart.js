@@ -7,12 +7,13 @@ import { useCart } from "react-use-cart";
 import { SidebarContext } from "@context/SidebarContext";
 import useAsync from "@hooks/useAsync";
 import SettingServices from "@services/SettingServices";
+import useTranslation from "next-translate/useTranslation";
 
 const StickyCart = () => {
   const { totalItems, cartTotal } = useCart();
   const { toggleCartDrawer } = useContext(SidebarContext);
   const { data: globalSetting } = useAsync(SettingServices.getGlobalSetting);
-
+  const { t } = useTranslation();
   const currency = globalSetting?.default_currency || "$";
 
   return (
