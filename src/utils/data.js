@@ -96,22 +96,22 @@ const userSidebar = [
 const sliderData = [
   {
     id: 1,
-    title: 'Slider1Title',
-    info: 'Slider1description',
+    title: 'Slider1-Title',
+    info: 'Slider1-Description',
     url: '/search?Category=biscuits--cakes',
     image: '/slider/slider-1.jpg',
   },
   {
     id: 2,
-    title: 'Slider2Title',
-    info: 'Slider2description',
+    title: 'Slider2-Title',
+    info: 'Slider2-Description',
     url: '/search?Category=fish--meat',
     image: '/slider/slider-2.jpg',
   },
   {
     id: 3,
-    title: 'Slider3Title',
-    info: 'Slider3description',
+    title: 'Slider3-Title',
+    info: 'Slider3-Description',
     url: '/search?category=fresh-vegetable',
     image: '/slider/slider-3.jpg',
   },
@@ -141,7 +141,7 @@ const ctaCardData = [
   },
 ];
 
-const featurePromo = [
+/* const featurePromo = [
   {
     id: 1,
     title: 'featurePromo1-title',
@@ -167,28 +167,28 @@ const featurePromo = [
     icon: FiGift,
   },
 ];
-
+ */
 const contactData = [
   {
     id: 1,
-    title: 'contact-page-box1-title',
-    info: 'contact-page-box1-info',
+    title: 'Email-Us',
+    info: 'Contact-Page-Box1-Info',
     icon: FiMail,
     contact: 'vannam34760@gmail.com',
     className: 'bg-emerald-100',
   },
   {
     id: 2,
-    title: 'contact-page-box2-title',
-    info: 'contact-page-box2-info',
+    title: 'Contact-Page-Box2-Title',
+    info: 'Contact-Page-Box2-Info',
     icon: FiPhoneCall,
     contact: '0987011701',
     className: 'bg-yellow-100',
   },
   {
     id: 3,
-    title: 'contact-page-box3-title',
-    info: 'contact-page-box3-info',
+    title: 'Contact-Page-Box3-Title',
+    info: 'Contact-Page-Box3-Title-Info',
     icon: FiMapPin,
     contact: '',
     className: 'bg-indigo-100',
@@ -200,6 +200,6 @@ export {
   userSidebar,
   sliderData,
   ctaCardData,
-  featurePromo,
+
   contactData,
 };

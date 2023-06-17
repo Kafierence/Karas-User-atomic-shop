@@ -1,6 +1,8 @@
+import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
 
 const InputPayment = ({ register, Icon, name, value, setShowCard }) => {
+  const { t } = useTranslation()
   return (
     <div className="px-3 py-4 card border border-gray-200 bg-white rounded-md">
       <label className="cursor-pointer label">
@@ -16,7 +18,7 @@ const InputPayment = ({ register, Icon, name, value, setShowCard }) => {
           <input
             onClick={() => setShowCard(value === 'Card' ? true : false)}
             {...register('paymentMethod', {
-              required: 'Payment Method is required!',
+              required: t("common:Payment-Required"),
             })}
             type="radio"
             value={value}

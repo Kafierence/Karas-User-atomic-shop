@@ -13,7 +13,8 @@ import CategoryCard from "@component/category/CategoryCard";
 import { showingTranslateValue } from "@utils/translate";
 
 const Category = () => {
-  const { lang } = useTranslation("ns1");
+  const { lang, t } = useTranslation("ns1");
+
   const { categoryDrawerOpen, closeCategoryDrawer } =
     useContext(SidebarContext);
   const { data, loading, error } = useAsync(() =>
@@ -49,7 +50,7 @@ const Category = () => {
       <div className="overflow-y-scroll scrollbar-hide w-full max-h-full">
         {categoryDrawerOpen && (
           <h2 className="font-semibold font-serif text-lg m-0 text-heading flex align-center border-b px-8 py-3">
-            All Categories
+            {t("All-Categories")}
           </h2>
         )}
         {error ? (

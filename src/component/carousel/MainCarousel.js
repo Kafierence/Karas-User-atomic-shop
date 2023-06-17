@@ -55,7 +55,7 @@ const MainCarousel = () => {
                 </p>
                 <Link href={item.url}>
                   <a className="hidden sm:inline-block lg:inline-block text-sm leading-6 font-serif font-medium mt-6 px-6 py-2 bg-emerald-500 text-center rounded-md text-white hover:bg-emerald-600">
-                    {t("common:Slider-btn")}
+                    {t("common:Shop-Now")}
                   </a>
                 </Link>
               </div>

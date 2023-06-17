@@ -38,7 +38,7 @@ const Settinglanguage = () => {
                     {currentLang?.name}
                     &nbsp;<i className="fas fa-angle-down"></i>
                 </button>
-                <Box className="dropdown-content" p={4} >
+                <Box className="dropdown-content" p={4} gap={2}>
                     {data.map((language) =>
                     (
                         <>

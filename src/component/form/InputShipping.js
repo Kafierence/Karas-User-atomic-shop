@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { FiTruck } from "react-icons/fi";
 
@@ -9,6 +10,7 @@ const InputShipping = ({
   currency,
   handleShippingCost,
 }) => {
+  const { t } = useTranslation()
   return (
     <div>
       <div className="p-3 card border border-gray-200 bg-white rounded-md">
@@ -23,9 +25,9 @@ const InputShipping = ({
                   {value}
                 </h6>
                 <p className="text-xs text-gray-500 font-medium">
-                  Delivery: {time}{" "}
+                  {t("common:Delivery")} {time}
                   <span className="font-medium text-gray-600">
-                    Cost :{currency}
+                    {t("common:Cost")} :{currency}
                     {cost}.00
                   </span>
                 </p>
@@ -34,7 +36,7 @@ const InputShipping = ({
             <input
               onClick={() => handleShippingCost(cost)}
               {...register(`shippingOption`, {
-                required: `Shipping Option is required!`,
+                required: `${t("Shipping-Required")}`,
               })}
               name="shippingOption"
               type="radio"

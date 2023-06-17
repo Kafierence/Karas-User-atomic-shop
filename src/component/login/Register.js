@@ -4,17 +4,19 @@ import { FiLock, FiMail, FiUser } from "react-icons/fi";
 import Error from "@component/form/Error";
 import InputArea from "@component/form/InputArea";
 import useLoginSubmit from "@hooks/useLoginSubmit";
+import useTranslation from "next-translate/useTranslation";
 
 const Register = ({ setShowResetPassword, setModalOpen }) => {
   const { handleSubmit, submitHandler, register, errors, loading } =
     useLoginSubmit(setModalOpen);
 
+  const { t } = useTranslation()
   return (
     <>
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold font-serif">Signing Up</h2>
+        <h2 className="text-3xl font-bold font-serif">{t("common:Signing-Up")}</h2>
         <p className="text-sm md:text-base text-gray-500 mt-2 mb-8 sm:mb-10">
-          Create an account with email
+          {t("common:Create-Account-By-Email")}
         </p>
       </div>
       <form
@@ -28,7 +30,7 @@ const Register = ({ setShowResetPassword, setModalOpen }) => {
               label="Name"
               name="name"
               type="text"
-              placeholder="Full Name"
+              placeholder={t("Full-Name")}
               Icon={FiUser}
             />
 
@@ -66,7 +68,7 @@ const Register = ({ setShowResetPassword, setModalOpen }) => {
                 onClick={() => setShowResetPassword(true)}
                 className="text-end text-sm text-heading ps-3 underline hover:no-underline focus:outline-none"
               >
-                Forgot password?
+                {t("common:Forgot-Password")}?
               </button>
             </div>
           </div>
@@ -82,7 +84,7 @@ const Register = ({ setShowResetPassword, setModalOpen }) => {
                 width={20}
                 height={10}
               />
-              <span className="font-serif ml-2 font-light">Processing</span>
+              <span className="font-serif ml-2 font-light">{t("common:Processing")}</span>
             </button>
           ) : (
             <button
@@ -90,7 +92,7 @@ const Register = ({ setShowResetPassword, setModalOpen }) => {
               type="submit"
               className="w-full text-center py-3 rounded bg-emerald-500 text-white hover:bg-emerald-600 transition-all focus:outline-none my-1"
             >
-              Register
+              {t("common:Register")}
             </button>
           )}
         </div>

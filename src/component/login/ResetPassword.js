@@ -6,19 +6,21 @@ import { FiMail } from "react-icons/fi";
 import Error from "@component/form/Error";
 import InputArea from "@component/form/InputArea";
 import useLoginSubmit from "@hooks/useLoginSubmit";
+import useTranslation from "next-translate/useTranslation";
 
 const ResetPassword = ({ setShowResetPassword, setModalOpen }) => {
   const { handleSubmit, submitHandler, register, errors, loading } =
     useLoginSubmit(setModalOpen);
+  const { t } = useTranslation()
 
   return (
     <>
       <div className="text-center mb-6">
         <Link href="/">
-          <a className="text-3xl font-bold font-serif">Forget Password</a>
+          <a className="text-3xl font-bold font-serif">{t("common:Forget-Password")}</a>
         </Link>
         <p className="text-sm md:text-base text-gray-500 mt-2 mb-8 sm:mb-10">
-          Reset Your Password
+          {t("common:Reset-Your-Password")}
         </p>
       </div>
       <form
@@ -32,7 +34,7 @@ const ResetPassword = ({ setShowResetPassword, setModalOpen }) => {
               label="Email"
               name="verifyEmail"
               type="email"
-              placeholder="Your Register Email"
+              placeholder={t("common:Your-Register-Email")}
               Icon={FiMail}
             />
             <Error errorName={errors.verifyEmail} />
@@ -45,7 +47,7 @@ const ResetPassword = ({ setShowResetPassword, setModalOpen }) => {
                 onClick={() => setShowResetPassword(true)}
                 className="text-end text-sm text-heading ps-3 underline hover:no-underline focus:outline-none"
               >
-                Forgot password?
+                {t("common:Forgot-Password")}?
               </button>
             </div>
           </div>
@@ -61,7 +63,7 @@ const ResetPassword = ({ setShowResetPassword, setModalOpen }) => {
                 width={20}
                 height={10}
               />
-              <span className="font-serif ml-2 font-light">Processing</span>
+              <span className="font-serif ml-2 font-light">{t("common:Processing")}</span>
             </button>
           ) : (
             <button
@@ -69,7 +71,7 @@ const ResetPassword = ({ setShowResetPassword, setModalOpen }) => {
               type="submit"
               className="w-full text-center py-3 rounded bg-emerald-500 text-white hover:bg-emerald-600 transition-all focus:outline-none my-1"
             >
-              Recover password
+              {t("common:Recovery-Password")}
             </button>
           )}
         </div>

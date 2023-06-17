@@ -4,11 +4,12 @@ import dayjs from "dayjs";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import OfferTimer from "@component/coupon/OfferTimer";
+import useTranslation from "next-translate/useTranslation";
 
 const CouponDetails = ({ coupon }) => {
   const [copiedCode, setCopiedCode] = useState("");
   const [copied, setCopied] = useState(false);
-
+  const { t } = useTranslation()
   const handleCopied = (code) => {
     setCopiedCode(code);
     setCopied(true);
@@ -66,7 +67,7 @@ const CouponDetails = ({ coupon }) => {
               <span className="text-lg md:text-xl lg:text-2xl leading-12 text-red-500 font-extrabold">
                 {coupon.discountPercentage}%
               </span>{" "}
-              Off
+              {t("common:Off")}
             </p>
           </div>
         </div>
@@ -79,11 +80,11 @@ const CouponDetails = ({ coupon }) => {
                   <div className="ml-2">
                     {dayjs().isAfter(dayjs(coupon.endTime)) ? (
                       <span className="text-red-600 inline-block">
-                        Inactive
+                        {t("common:Inactive")}
                       </span>
                     ) : (
                       <span className="text-emerald-600 inline-block">
-                        Active
+                        {t("common:Active")}
                       </span>
                     )}
                   </div>
@@ -109,7 +110,7 @@ const CouponDetails = ({ coupon }) => {
                 </div>
               </div>
               <p className="text-xs leading-5 text-gray-500 mt-2">
-                * This coupon code apply when you shopping more then{" "}
+                {t("common:This-Coupon-apply-more")}
                 <span className="font-medium">
                   {currency}
                   {coupon.minimumAmount}

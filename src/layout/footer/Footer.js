@@ -23,11 +23,7 @@ const Footer = () => {
       link: "/contact-us"
     },
     {
-      label: t('common:Size-Guide'),
-      link: "/side-guide"
-    },
-    {
-      label: t('common:Privacy-policy'),
+      label: t('common:Privacy-Policy'),
       link: "/privacy"
     },
     {
@@ -37,21 +33,18 @@ const Footer = () => {
   ]
   const topCagories = [
     {
-      label: t("common:Pet-Care"),
-      link: "/search?Category=laptop",
+      label: t("common:Fish-Meat"),
+      link: "/search?category=pet-care",
     },
     {
-      label: t("common:Beauty-$-Health"),
-      link: "/search?Category=tablet",
+      label: t("common:Beauty-Health"),
+      link: "/search?category=beaty-health",
     },
     {
-      label: t("common:SMART_DEVICES"),
-      link: "/search?Category=smart-devices",
+      label: t("common:Soft-Drinks"),
+      link: "/search?category=smart-devices",
     },
-    {
-      label: t("common:Curve"),
-      link: "/search?Category=curve",
-    }
+
   ]
 
   const accountService = [
@@ -66,7 +59,7 @@ const Footer = () => {
     },
     {
       label: t("common:Recent-Orders"),
-      link: "/search?Category=smart-devices",
+      link: "/user/recent-order",
     },
     {
       label: t("common:Update-Profile"),
@@ -80,7 +73,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 lg:py-16 justify-between">
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
-              {t("common:footer-menu-title")}
+              {t("common:Customer-Services")}
             </h3>
             <ul className="text-sm flex flex-col space-y-3">
               {profileInfo.map((item => (
@@ -92,7 +85,7 @@ const Footer = () => {
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
-              {t("common:Footer-Top-Category")}
+              {t("common:Top-Category")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
               {topCagories.map(item => (
@@ -107,7 +100,7 @@ const Footer = () => {
           </div>
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
             <h3 className="text-md lg:leading-7 font-semibold mb-4 sm:mb-5 lg:mb-6 pb-0.5">
-              {t("common:Footer-My-Account-Title")}
+              {t("common:My-Account")}
             </h3>
             <ul className="text-sm lg:text-15px flex flex-col space-y-3">
               {

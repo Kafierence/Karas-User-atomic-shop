@@ -36,7 +36,6 @@ const MobileFooter = () => {
         </button>
         <Link href="/">
           <a className="text-xl text-white" rel="noreferrer" aria-label="Home">
-            {' '}
             <FiHome className="w-6 h-6 drop-shadow-xl" />
           </a>
         </Link>
