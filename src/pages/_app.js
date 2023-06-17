@@ -8,14 +8,13 @@ import getStripe from "@utils/stripe";
 import { UserProvider } from "@context/UserContext";
 import DefaultSeo from "@component/common/DefaultSeo";
 import { SidebarProvider } from "@context/SidebarContext";
-import themes from "src/theme/themes";
-import { ChakraProvider } from "@chakra-ui/react";
+import Chakra from "@component/ChakraBox/Chakra";
 const stripePromise = getStripe();
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <ChakraProvider theme={themes} >
+      <Chakra cookies={pageProps.cookies}>
         <GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}>
           <UserProvider>
             <SidebarProvider>
@@ -28,7 +27,7 @@ function MyApp({ Component, pageProps }) {
             </SidebarProvider>
           </UserProvider>
         </GoogleOAuthProvider>
-      </ChakraProvider>
+      </Chakra>
     </>
   );
 }

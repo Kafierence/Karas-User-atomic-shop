@@ -92,7 +92,7 @@ const Footer = () => {
             </h3>
             <ul className="text-sm flex flex-col space-y-3">
               {profileInfo.map((item => (
-                <Box className="flex items-baseline  hover:text-emerald-600" key={item.label}>
+                <Box className="flex items-baseline" key={item.label}>
                   <LinkPrimary title={item.label} link={item.link} />
                 </Box>
               )))}
