@@ -40,6 +40,7 @@
     "Shipping-Method": "Shipping Method",
     "Signing-In":"Signing In",
     "Signing-Up":"Signing Up",
+    
     "Create-Account":"Create an account",
     "Login":"Login",
     "Login-Box-Text":"Login with your email and password",
@@ -157,7 +158,7 @@
   "Fish-Meat": "Fish & Meat",
   "Soft-Drinks": "Soft Drinks",
   "Baby-Care": "Baby Care",
-  
+  "Fruits-Vegetable":"Fruits Vegetable",
   "Beauty-Health": " Beauty & Health",
 
   "Follow-Me": "Follow Me",

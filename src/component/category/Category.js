@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 import { IoClose } from "react-icons/io5";
 import useTranslation from "next-translate/useTranslation";
 //internal import
@@ -11,6 +11,7 @@ import { SidebarContext } from "@context/SidebarContext";
 import CategoryServices from "@services/CategoryServices";
 import CategoryCard from "@component/category/CategoryCard";
 import { showingTranslateValue } from "@utils/translate";
+import { Image } from "@chakra-ui/react";
 
 const Category = () => {
   const { lang, t } = useTranslation("ns1");
@@ -27,15 +28,10 @@ const Category = () => {
         <div className="w-full flex justify-between items-center h-16 px-6 py-4 bg-emerald-500 text-white border-b border-gray-100">
           <h2 className="font-semibold font-serif text-lg m-0 text-heading flex align-center">
             <Link href="/">
-              {/*   <a className="mr-10">
-                <Image
-                  width={100}
-                  height={38}
-                  src="/logo/logo-light.svg"
-                  alt="logo"
-                />
-              </a> */}
-              Logo Update Soon
+
+              <Image src="/logo/Logo-dark.svg" width="auto" height={50} alt="Logo" />
+
+
             </Link>
           </h2>
           <button
@@ -90,7 +86,7 @@ const Category = () => {
                     aria-hidden="true"
                   />
                   <p className="inline-flex items-center justify-between ml-2 text-sm font-medium w-full hover:text-emerald-600">
-                    {item.title}
+                    {t(`common:${item.title}`)}
                   </p>
                 </a>
               ))}

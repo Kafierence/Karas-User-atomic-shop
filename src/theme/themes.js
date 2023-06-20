@@ -19,6 +19,7 @@ export const backgrounds = {
       700: 'linear-gradient(135.57deg, #EF4444 14.93%, #FF6B67 85.07%)',
     },
   },
+  footer: '#191D28'
 };
 export const colors = {
   primary: {

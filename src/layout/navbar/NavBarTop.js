@@ -8,7 +8,7 @@ import LoginModal from "@component/modal/LoginModal";
 import { UserContext } from "@context/UserContext";
 import Cookies from "js-cookie";
 import dynamic from "next/dynamic";
-import Settinglanguage from "@component/language/Settinglanguage";
+
 
 const NavBarTop = () => {
   const { t } = useTranslation();
