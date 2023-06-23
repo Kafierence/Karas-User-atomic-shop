@@ -27,7 +27,7 @@ const Settinglanguage = () => {
             }
         })();
     }, []);
-    const { isOpen, onToggle, onClose } = useDisclosure();
+
     return (
         <>
             <Box className="dropdown">
