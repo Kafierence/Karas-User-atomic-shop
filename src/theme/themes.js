@@ -19,6 +19,10 @@ export const backgrounds = {
       700: 'linear-gradient(135.57deg, #EF4444 14.93%, #FF6B67 85.07%)',
     },
   },
+  footer: '#191D28',
+  boxShadow: {
+    header: '0px 14px 20px rgba(0, 4, 94, .04)'
+  }
 };
 export const colors = {
   primary: {
@@ -41,6 +45,7 @@ export const colors = {
       200: '#84F1B4;',
       300: '#63E4A8',
       400: '#34D399',
+      500: "#10b981"
     },
     original: {
       100: '#34D399',
@@ -95,6 +100,7 @@ export const colors = {
   },
   ...backgrounds,
 };
+
 
 export const Link = {
   _hover: {

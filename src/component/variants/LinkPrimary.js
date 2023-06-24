@@ -5,8 +5,10 @@ const LinkPrimary = ({ title, link }) => {
     return (
         <Link href={link} variant='unstyle'>
             <Text
-                position={'relative'}
+                position='relative'
+
                 _hover={{
+                    color: 'secondary.green.500',
                     _after: {
                         width: '100%',
                         opacity: 1,
@@ -17,7 +19,7 @@ const LinkPrimary = ({ title, link }) => {
                     content: "''",
                     height: '2px',
                     width: 0,
-                    backgroundColor: 'black',
+                    backgroundColor: 'secondary.green.500',
                     position: 'absolute',
                     bottom: '-2px',
                     right: 0,

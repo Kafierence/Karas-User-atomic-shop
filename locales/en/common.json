@@ -40,6 +40,7 @@
     "Shipping-Method": "Shipping Method",
     "Signing-In":"Signing In",
     "Signing-Up":"Signing Up",
+    
     "Create-Account":"Create an account",
     "Login":"Login",
     "Login-Box-Text":"Login with your email and password",
@@ -63,7 +64,7 @@
 
     "No-Order": "You Have no order Yet!",
     "Recent-Orders":"Recent Orders",
-
+    "Coupon-Available":"Coupon Available",
     "/=================*PAGE*=================/": "",
     "Offer": "Offer",
     "Offers":"Offers",
@@ -120,6 +121,7 @@
   "Faq-Question2-Ans": "Abosolutely Yes. If you decide to cancel your subscription, you have the freedom to do so at any time. Your subscription will remain active until the completion of your current term, whether it is a month or a year, but it will not automatically renew thereafter. However, please note that unless you manually delete your account, all associated data will be permanently removed 60 days from the date your subscription becomes inactive.",
   "Faq-Question3": "Whice payment method you should accept?",
   "Faq-Question3-Ans": "We accept common payment methods in many business include credit and debit cards (Visa,Mastercard,ect..). In the next update version in the future. I will update new connect include: mobile wallet(Apple pay , Google pay), bank",
+  "Faq-Question4": "Whice payment method you should accept?",
   "Faq-Question4-Ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
   "Faq-Question5": "What is Karas EC2 auto scaling?",
   "Faq-Question5-Ans": "Continually impact seamless imperatives for best-of-breed best practices. Phosfluorescently facilitate parallel applications with unique imperatives. Proactively plagiarize functionalized deliverables via inexpensive solutions. Collaboratively embrace web-enabled infomediaries rather than diverse testing procedures.",
@@ -136,7 +138,7 @@
   "Slider1-Description": "Dramatically facilitate effective total linkage for go forward processes...",
 
   "Slider2-Title": "Best Different Type of Grocery Store",
-  "Slider2-Descriptio": "Quickly aggregate empowered networks after emerging products...",
+  "Slider2-Description": "Quickly aggregate empowered networks after emerging products...",
 
   "Slider3-Title": "Quality Freshness Guaranteed!",
   "Slider3-Description": "Intrinsicly fashion performance based products rather than accurate benefits...",
@@ -157,7 +159,7 @@
   "Fish-Meat": "Fish & Meat",
   "Soft-Drinks": "Soft Drinks",
   "Baby-Care": "Baby Care",
-  
+  "Fruits-Vegetable":"Fruits Vegetable",
   "Beauty-Health": " Beauty & Health",
 
   "Follow-Me": "Follow Me",
@@ -172,7 +174,7 @@
   "Contact-Page-Box2-Info": "Distinctively disseminate focused solutions clicks-and-mortar ministate.",
 
   "Contact-Page-Box3-Title": "Location",
-  "Contact-Page-Box3-Title-Info": "GMT HCM City , Viet Nam",
+  "Contact-Page-Box3-Title-Info": "484 Le Van Viet Street, Thu Duc District, HCM City , Viet Nam",
 
   "Contact-Page-Form-Title": "For any suppoort just send your query",
   "Contact-Page-Form-Description": "Collaboratively promote client-focused convergence vis-a-vis customer directed alignments via plagiarize strategic users and standardized infrastructures.",
@@ -275,7 +277,7 @@
   "Terms-Condition-Disclaimer-Docs5": "The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty. As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.",
   "Items":"Items",
   "/=================*Featured Categories*=================/": "",
-  "Featured-Title": "Featured Categories",
+  "Featured-Title": "Browse All Categories",
   "Featured-Sub-Title": "Choose your necessary products from this feature categories.",
 
   "/=================*popular products*=================/": "",
@@ -327,7 +329,7 @@
   "Total-Cost": "TOTAL COST",
 
   "Method":"Method",
-  "Oder-Time": "ORDERTIME",
+  "Order-Time": "ORDERTIME",
   "Status":"Status",
   "Total": "TOTAL",
   "Details": "Details",

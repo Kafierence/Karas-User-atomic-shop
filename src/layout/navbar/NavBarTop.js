@@ -8,7 +8,7 @@ import LoginModal from "@component/modal/LoginModal";
 import { UserContext } from "@context/UserContext";
 import Cookies from "js-cookie";
 import dynamic from "next/dynamic";
-import Settinglanguage from "@component/language/Settinglanguage";
+
 
 const NavBarTop = () => {
   const { t } = useTranslation();
@@ -51,7 +51,7 @@ const NavBarTop = () => {
                 href="tel:+012345609"
                 className="font-bold text-emerald-500 ml-1"
               >
-                +0987011701
+                {t("common:Owner-Number")}
               </a>
 
             </span>

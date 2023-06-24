@@ -60,7 +60,7 @@ const ListBrand = () => {
     return (
         <>
             <Flex justifyContent="space-between">
-                <Text textTransform="capitalize">{t('common:Brands')}</Text>
+                <Text textTransform="capitalize" fontSize='1.5rem' fontWeight='bold'>{t('common:Brands')}</Text>
                 <HStack>
                     <Button ref={prevRef}>
                         <Icon

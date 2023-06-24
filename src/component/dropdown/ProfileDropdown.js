@@ -33,16 +33,16 @@ const ProfileDropdown = () => {
     };
     const data = [
         {
-            label: t('common:DASHBOARD'),
+            label: t('common:Dashboard'),
             link: "/user/dashboard",
 
         },
         {
-            label: t("common:MY_ORDERS"),
+            label: t("common:My-Orders"),
             link: "/user/my-orders",
         },
         {
-            label: t("common:UPDATE_PROFILE"),
+            label: t("common:Update-Profile"),
             link: "/user/update-profile"
         }
     ]
@@ -96,7 +96,7 @@ const ProfileDropdown = () => {
                     <MenuDivider />
 
                     <MenuItem px="20px" onClick={() => handleLogOut()}>
-                        {t('common:SIGN_OUT')}
+                        {t('common:Logout')}
                     </MenuItem>
                 </MenuList>
             </Menu>

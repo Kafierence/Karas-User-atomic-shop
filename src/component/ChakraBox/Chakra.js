@@ -13,7 +13,7 @@ function Chakra({ cookies, children }) {
       ? cookieStorageManagerSSR(cookies)
       : localStorageManager;
   return (
-    <ChakraProvider colorModeManager={colorModeManager} theme={themes}>
+    <ChakraProvider theme={themes}>
       {children}
     </ChakraProvider>
   );
