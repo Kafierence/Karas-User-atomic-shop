@@ -9,6 +9,7 @@ import MobileFooter from "@layout/footer/MobileFooter";
 import FeatureCard from "@component/feature-card/FeatureCard";
 import NavBarTop from "./navbar/NavBarTop";
 import TopProgressBar from "@component/progress/TopProgressBar";
+import { Box } from "@chakra-ui/react";
 
 
 const Layout = ({ title, description, children }) => {
@@ -16,7 +17,7 @@ const Layout = ({ title, description, children }) => {
     <>
       <ToastContainer />
       <TopProgressBar />
-      <div className="font-sans">
+      <Box className="font-sans" scrollBehavior={'smooth'}>
         <Head>
           <title>
             {title
@@ -39,7 +40,7 @@ const Layout = ({ title, description, children }) => {
             <Footer />
           </div>
         </div>
-      </div>
+      </Box>
     </>
   );
 };

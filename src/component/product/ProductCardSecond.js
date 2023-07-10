@@ -60,6 +60,7 @@ const ProductCardSecond = ({ product, attributes }) => {
                 />
             )}
             <Box overflow={'hidden'}>
+
             </Box>
         </>
     )
